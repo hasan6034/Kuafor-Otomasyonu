@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmanaekran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmanaekran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmanaekran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmanaekran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,14 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmAnaEkran.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmAnaEkran.cs",
+              "RelativeDocumentMoniker": "frmAnaEkran.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmAnaEkran.cs",
+              "RelativeToolTip": "frmAnaEkran.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:07:15.857Z",
+              "WhenOpened": "2024-10-04T12:46:09.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmAnaEkran.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmAnaEkran.cs",
+              "RelativeDocumentMoniker": "frmAnaEkran.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmAnaEkran.cs [Design]",
+              "RelativeToolTip": "frmAnaEkran.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T11:47:26.238Z",
               "EditorCaption": " [Design]"
             }
           ]

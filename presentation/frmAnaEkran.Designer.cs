@@ -68,8 +68,7 @@
             this.tileControl_Menu.Location = new System.Drawing.Point(0, 0);
             this.tileControl_Menu.MaxId = 10;
             this.tileControl_Menu.Name = "tileControl_Menu";
-            this.tileControl_Menu.Position = 298;
-            this.tileControl_Menu.Size = new System.Drawing.Size(1202, 434);
+            this.tileControl_Menu.Size = new System.Drawing.Size(1202, 432);
             this.tileControl_Menu.TabIndex = 0;
             this.tileControl_Menu.Tag = "";
             // 
@@ -89,6 +88,7 @@
             this.tileItem_KullaniciIslemleri.Id = 0;
             this.tileItem_KullaniciIslemleri.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_KullaniciIslemleri.Name = "tileItem_KullaniciIslemleri";
+            this.tileItem_KullaniciIslemleri.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_KullaniciIslemleri_ItemClick);
             // 
             // tileItem_RolTanimlama
             // 
@@ -99,6 +99,7 @@
             this.tileItem_RolTanimlama.Id = 1;
             this.tileItem_RolTanimlama.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_RolTanimlama.Name = "tileItem_RolTanimlama";
+            this.tileItem_RolTanimlama.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_RolTanimlama_ItemClick);
             // 
             // tileGroup_IsletmeAyarlari
             // 
@@ -213,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 434);
+            this.ClientSize = new System.Drawing.Size(1202, 432);
             this.Controls.Add(this.tileControl_Menu);
             this.Name = "frmAnaEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

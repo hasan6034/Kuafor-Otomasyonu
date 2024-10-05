@@ -70,6 +70,7 @@ namespace Kuafor_Otomasyonu
                     Settings.Default.Sifre = "";
                     Settings.Default.Save();
                 }
+                StaticClass.Yetkiler = _kullaniciService.RolYetkileriGetir(StaticClass.RoleID);
                 frmAnaEkran anaEkran = new frmAnaEkran();
                 anaEkran.Show();
                 this.Hide();

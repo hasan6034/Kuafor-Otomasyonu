@@ -32,6 +32,7 @@ namespace Kuafor_Otomasyonu
                     KullanicilarDTO kullanici = _kullaniciService.KullaniciGiris(Settings.Default.KullaniciAdi, Settings.Default.Sifre);
                     StaticClass.KulID = kullanici.KulID;
                     StaticClass.RoleID = kullanici.RolID;
+                    StaticClass.Yetkiler = _kullaniciService.RolYetkileriGetir(StaticClass.RoleID);
                     Application.Run(new frmAnaEkran());
                 }
                 catch (SqlException ex)

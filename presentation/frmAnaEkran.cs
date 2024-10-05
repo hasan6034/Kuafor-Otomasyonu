@@ -32,5 +32,16 @@ namespace Kuafor_Otomasyonu
                 Application.Exit();
             }
         }
+
+        private void tileItem_KullaniciIslemleri_ItemClick(object sender, TileItemEventArgs e)
+        {
+
+        }
+
+        private void tileItem_RolTanimlama_ItemClick(object sender, TileItemEventArgs e)
+        {
+            FrmRolYetki rolYetki = new FrmRolYetki();
+            rolYetki.Show();
+        }
     }
 }

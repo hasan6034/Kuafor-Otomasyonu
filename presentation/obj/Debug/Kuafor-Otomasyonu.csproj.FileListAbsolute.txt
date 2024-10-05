@@ -53,3 +53,4 @@ C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\DevExp
 C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\DevExpress.RichEdit.v23.1.Core.xml
 C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\DevExpress.XtraTreeList.v23.1.xml
 C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\DevExpress.Office.v23.1.Core.xml
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor_Otomasyonu.FrmKullaniciIslemleri.resources

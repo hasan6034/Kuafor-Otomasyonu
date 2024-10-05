@@ -37,6 +37,19 @@ namespace Service.Services
         {
             return _kullaniciRepository.RolDELETE(rolID, sayfaID, kulID);
         }
+        public IEnumerable<KullanicilarDTO> KullaniciGetir(int kulID)
+        {
+            return _kullaniciRepository.KullaniciGetir(kulID);
+        }
+        public SonucDTO KullaniciSAVE(KullanicilarDTO kullanici, int sayfaID, int olusturanKulID)
+        {
+            return _kullaniciRepository.KullaniciSAVE(kullanici.KulID, kullanici.KulAdi, kullanici.RolID, kullanici.Adi, kullanici.Soyadi,
+                                                                kullanici.KulSifre, kullanici.DurumID, sayfaID, olusturanKulID);
+        }
+        public SonucDTO KullaniciDELETE(int kulID, int sayfaID, int olusturanKulID)
+        {
+            return _kullaniciRepository.KullaniciDELETE(kulID, sayfaID, olusturanKulID);
+        }
 
     }
 }

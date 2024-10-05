@@ -45,6 +45,7 @@
     <Compile Include="DTOs\RollerDTO.cs" />
     <Compile Include="DTOs\RolYetkileriDTO.cs" />
     <Compile Include="DTOs\SonucDTO.cs" />
+    <Compile Include="Enums\Durumlar.cs" />
     <Compile Include="Enums\Sayfalar.cs" />
     <Compile Include="IRepositories\IGenelRepository.cs" />
     <Compile Include="IRepositories\IKullaniciRepository.cs" />

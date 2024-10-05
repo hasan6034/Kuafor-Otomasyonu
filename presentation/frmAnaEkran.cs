@@ -35,7 +35,8 @@ namespace Kuafor_Otomasyonu
 
         private void tileItem_KullaniciIslemleri_ItemClick(object sender, TileItemEventArgs e)
         {
-
+            FrmKullaniciIslemleri kullaniciIslemleri = new FrmKullaniciIslemleri();
+            kullaniciIslemleri.Show();
         }
 
         private void tileItem_RolTanimlama_ItemClick(object sender, TileItemEventArgs e)

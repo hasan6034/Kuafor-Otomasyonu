@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmrolyetki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmrolyetki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmkullaniciislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmkullaniciislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmrolyetki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmrolyetki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|c:\\users\\lenovo\\documents\\github\\kuafor-otomasyonu\\presentation\\frmkullaniciislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABA834F-7896-49A6-BFC3-33C64B327495}|Kuafor-Otomasyonu.csproj|solutionrelative:frmkullaniciislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,65 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmGiris.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmGiris.cs",
-              "RelativeDocumentMoniker": "frmGiris.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmGiris.cs",
-              "RelativeToolTip": "frmGiris.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAqwD4AAABBAAAA",
+              "Title": "frmKullaniciIslemleri.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmKullaniciIslemleri.cs",
+              "RelativeDocumentMoniker": "frmKullaniciIslemleri.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmKullaniciIslemleri.cs",
+              "RelativeToolTip": "frmKullaniciIslemleri.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAowFUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:59:58.318Z",
+              "WhenOpened": "2024-10-05T13:13:11Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmGiris.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmGiris.cs",
-              "RelativeDocumentMoniker": "frmGiris.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmGiris.cs [Design]",
-              "RelativeToolTip": "frmGiris.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:59:56.717Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCIAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:59:14.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmRolYetki.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmRolYetki.cs",
-              "RelativeDocumentMoniker": "frmRolYetki.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmRolYetki.cs [Design]",
-              "RelativeToolTip": "frmRolYetki.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:14:23.034Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmRolYetki.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmRolYetki.cs",
-              "RelativeDocumentMoniker": "frmRolYetki.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmRolYetki.cs",
-              "RelativeToolTip": "frmRolYetki.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Title": "frmKullaniciIslemleri.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmKullaniciIslemleri.cs",
+              "RelativeDocumentMoniker": "frmKullaniciIslemleri.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\GitHub\\Kuafor-Otomasyonu\\presentation\\frmKullaniciIslemleri.cs [Design]",
+              "RelativeToolTip": "frmKullaniciIslemleri.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:12:46.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T13:11:50.267Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

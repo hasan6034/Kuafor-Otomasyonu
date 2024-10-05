@@ -10,6 +10,8 @@ namespace Core.IServices
         IEnumerable<RollerDTO> RolGetir(int rolID);
         SonucDTO RolYetkiSAVE(int rolID, string rolAdi, string yetkiler, int sayfaID, int kulID);
         SonucDTO RolDELETE(int rolID, int sayfaID, int kulID);
-
+        IEnumerable<KullanicilarDTO> KullaniciGetir(int kulID);
+        SonucDTO KullaniciSAVE(KullanicilarDTO kullanici, int sayfaID, int olusturanKulID);
+        SonucDTO KullaniciDELETE(int kulID, int sayfaID, int olusturanKulID);
     }
 }

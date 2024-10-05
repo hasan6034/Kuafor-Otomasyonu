@@ -1,0 +1,9 @@
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\bin\Debug\Service.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\bin\Debug\Service.pdb
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\bin\Debug\Core.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\bin\Debug\Core.pdb
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\obj\Debug\Service.csproj.AssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\obj\Debug\Service.csproj.Up2Date
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\obj\Debug\Service.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Service\obj\Debug\Service.pdb

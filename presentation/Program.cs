@@ -1,4 +1,10 @@
-﻿using System;
+﻿using Core.DTOs;
+using Core.IServices;
+using Repository.Repositories;
+using Service.Services;
+using System;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Kuafor_Otomasyonu
@@ -13,7 +19,48 @@ namespace Kuafor_Otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAnaEkran());
+            IKullaniciService _kullaniciService = new KullaniciService(
+                    new KullaniciRepository(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString));
+
+            IGenelService _genelService = new GenelService(
+            new GenelRepository(ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString));
+
+            if (Settings.Default.KullaniciAdi != "" && Settings.Default.Sifre != "")
+            {
+                try
+                {
+                    KullanicilarDTO kullanici = _kullaniciService.KullaniciGiris(Settings.Default.KullaniciAdi, Settings.Default.Sifre);
+                    StaticClass.KulID = kullanici.KulID;
+                    StaticClass.RoleID = kullanici.RolID;
+                    Application.Run(new frmAnaEkran());
+                }
+                catch (SqlException ex)
+                {
+                    GenelFonksiyonlar.MesajGoster(GenelFonksiyonlar.MesajTipleri.Hata, ex.Message, "Hata");
+                    Application.Run(new FrmGiris());
+                }
+                catch (Exception ex)
+                {
+                    try
+                    {
+                        SonucDTO sonuc = _genelService.HataKaydet(ex.HResult, ex.Message, "Main", StaticClass.KulID);
+                        var errorID = sonuc.Sonuc;
+                        GenelFonksiyonlar.MesajGoster(GenelFonksiyonlar.MesajTipleri.Hata, string.Format("Beklenmedik Bir Hata Oluştu. [HataID:{0}]", errorID), "Hata");
+                    }
+                    catch (Exception)
+                    {
+                        GenelFonksiyonlar.MesajGoster(GenelFonksiyonlar.MesajTipleri.Hata, ex.Message, "Hata");
+                    }
+                    finally
+                    {
+                        Application.Run(new FrmGiris());
+                    }
+                }
+            }
+            else
+            {
+                Application.Run(new FrmGiris());
+            }
         }
     }
 }

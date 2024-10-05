@@ -28,3 +28,13 @@ C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor
 C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor-O.4D151623.Up2Date
 C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor-Otomasyonu.exe
 C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor-Otomasyonu.pdb
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Core.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Repository.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Service.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Dapper.dll
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Core.pdb
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Repository.pdb
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Service.pdb
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\bin\Debug\Dapper.xml
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor_Otomasyonu.FrmGiris.resources
+C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\presentation\obj\Debug\Kuafor_Otomasyonu.GenelFonksiyonlar.resources

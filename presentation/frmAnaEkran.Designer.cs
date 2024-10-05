@@ -34,26 +34,26 @@
             DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
             this.tileControl_Menu = new DevExpress.XtraEditors.TileControl();
             this.tileGroup_Kullanici = new DevExpress.XtraEditors.TileGroup();
             this.tileItem_KullaniciIslemleri = new DevExpress.XtraEditors.TileItem();
             this.tileItem_RolTanimlama = new DevExpress.XtraEditors.TileItem();
             this.tileGroup_IsletmeAyarlari = new DevExpress.XtraEditors.TileGroup();
             this.tileItem_Subeler = new DevExpress.XtraEditors.TileItem();
-            this.tileGroup_Musteri = new DevExpress.XtraEditors.TileGroup();
             this.tileItem_Hizmetler = new DevExpress.XtraEditors.TileItem();
+            this.tileGroup_Musteri = new DevExpress.XtraEditors.TileGroup();
             this.tileItem_MusteriIslemleri = new DevExpress.XtraEditors.TileItem();
             this.tileItem_Randevu = new DevExpress.XtraEditors.TileItem();
-            this.tileGroup_Oturum = new DevExpress.XtraEditors.TileGroup();
-            this.tileItem_OturumuKapat = new DevExpress.XtraEditors.TileItem();
             this.tileGroup_Raporlar = new DevExpress.XtraEditors.TileGroup();
             this.tileItem_MusteriRaporu = new DevExpress.XtraEditors.TileItem();
             this.tileItem_PersonelBazliRapor = new DevExpress.XtraEditors.TileItem();
             this.tileItem_SubeBazliRapor = new DevExpress.XtraEditors.TileItem();
+            this.tileGroup_Oturum = new DevExpress.XtraEditors.TileGroup();
+            this.tileItem_OturumuKapat = new DevExpress.XtraEditors.TileItem();
             this.SuspendLayout();
             // 
             // tileControl_Menu
@@ -68,6 +68,7 @@
             this.tileControl_Menu.Location = new System.Drawing.Point(0, 0);
             this.tileControl_Menu.MaxId = 10;
             this.tileControl_Menu.Name = "tileControl_Menu";
+            this.tileControl_Menu.Position = 298;
             this.tileControl_Menu.Size = new System.Drawing.Size(1202, 434);
             this.tileControl_Menu.TabIndex = 0;
             this.tileControl_Menu.Tag = "";
@@ -116,13 +117,6 @@
             this.tileItem_Subeler.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Subeler.Name = "tileItem_Subeler";
             // 
-            // tileGroup_Musteri
-            // 
-            this.tileGroup_Musteri.Items.Add(this.tileItem_MusteriIslemleri);
-            this.tileGroup_Musteri.Items.Add(this.tileItem_Randevu);
-            this.tileGroup_Musteri.Name = "tileGroup_Musteri";
-            this.tileGroup_Musteri.Text = "Müşteri";
-            // 
             // tileItem_Hizmetler
             // 
             this.tileItem_Hizmetler.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -132,6 +126,13 @@
             this.tileItem_Hizmetler.Id = 3;
             this.tileItem_Hizmetler.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Hizmetler.Name = "tileItem_Hizmetler";
+            // 
+            // tileGroup_Musteri
+            // 
+            this.tileGroup_Musteri.Items.Add(this.tileItem_MusteriIslemleri);
+            this.tileGroup_Musteri.Items.Add(this.tileItem_Randevu);
+            this.tileGroup_Musteri.Name = "tileGroup_Musteri";
+            this.tileGroup_Musteri.Text = "Müşteri";
             // 
             // tileItem_MusteriIslemleri
             // 
@@ -152,22 +153,6 @@
             this.tileItem_Randevu.Id = 5;
             this.tileItem_Randevu.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Randevu.Name = "tileItem_Randevu";
-            // 
-            // tileGroup_Oturum
-            // 
-            this.tileGroup_Oturum.Items.Add(this.tileItem_OturumuKapat);
-            this.tileGroup_Oturum.Name = "tileGroup_Oturum";
-            this.tileGroup_Oturum.Text = "Oturum";
-            // 
-            // tileItem_OturumuKapat
-            // 
-            this.tileItem_OturumuKapat.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.tileItem_OturumuKapat.AppearanceItem.Normal.Options.UseFont = true;
-            tileItemElement10.Text = "Oturumu Kapat";
-            this.tileItem_OturumuKapat.Elements.Add(tileItemElement10);
-            this.tileItem_OturumuKapat.Id = 6;
-            this.tileItem_OturumuKapat.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
-            this.tileItem_OturumuKapat.Name = "tileItem_OturumuKapat";
             // 
             // tileGroup_Raporlar
             // 
@@ -207,6 +192,23 @@
             this.tileItem_SubeBazliRapor.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_SubeBazliRapor.Name = "tileItem_SubeBazliRapor";
             // 
+            // tileGroup_Oturum
+            // 
+            this.tileGroup_Oturum.Items.Add(this.tileItem_OturumuKapat);
+            this.tileGroup_Oturum.Name = "tileGroup_Oturum";
+            this.tileGroup_Oturum.Text = "Oturum";
+            // 
+            // tileItem_OturumuKapat
+            // 
+            this.tileItem_OturumuKapat.AppearanceItem.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.tileItem_OturumuKapat.AppearanceItem.Normal.Options.UseFont = true;
+            tileItemElement10.Text = "Oturumu Kapat";
+            this.tileItem_OturumuKapat.Elements.Add(tileItemElement10);
+            this.tileItem_OturumuKapat.Id = 6;
+            this.tileItem_OturumuKapat.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
+            this.tileItem_OturumuKapat.Name = "tileItem_OturumuKapat";
+            this.tileItem_OturumuKapat.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_OturumuKapat_ItemClick);
+            // 
             // frmAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,6 +219,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kmu Berber Otomasyonu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAnaEkran_FormClosed);
             this.Load += new System.EventHandler(this.frmAnaEkran_Load);
             this.ResumeLayout(false);
 

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="svgImages.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>244, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v23.1" name="DevExpress.Data.v23.1, Version=23.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="svgImages.close" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIzLjEsIFZlcnNpb249MjMuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIMBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MjQgMjQiPg0KICA8cG9seWdvbiBwb2ludHM9IjIxLjksMi45IDIxLjEsMi4xIDEyLDExLjMgMi45LDIu
+        MSAyLjEsMi45IDExLjMsMTIgMi4xLDIxLjEgMi45LDIxLjkgMTIsMTIuNyAyMS4xLDIxLjkgMjEuOSwy
+        MS4xIDEyLjcsMTIgIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <metadata name="htmlMessageTemplateCollection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="Hata.Styles" xml:space="preserve">
+    <value>body{	
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Segoe UI';
+}
+.frame {
+	width: 450px;
+	color: @ControlText;
+	background-color: @Window;
+	border: 1px solid @Critical;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 8px 16px @Critical/0.6;
+}
+.header {
+	padding: 8px;
+	color: @White;
+	background-color: @Critical;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.caption {
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.close-button {
+	padding: 8px;
+	border-radius: 5px;
+}
+.close-button:hover {
+	background-color: @WindowText/0.1;
+}
+.close-button:active {
+	background-color: @ControlText/0.05;
+}
+.close-button-img {
+	fill: White;
+	width: 18px;
+	height: 18px;
+	opacity: 0.8;
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.message {
+	margin: 7px;
+	word-wrap: break-word;
+	font-size: 18px;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	opacity: 0.8;
+}
+.text {
+	color: @ControlText;
+	text-align: center;
+}
+.button {
+	color: @Critical;
+	padding: 8px 24px;
+	border: 1px solid @Critical;
+	border-radius: 5px;
+}
+.button:hover {
+	color: @White;
+	background-color: @Critical;
+	box-shadow: 0px 0px 10px @Critical/0.5;
+}</value>
+  </data>
+  <data name="Hata.Template" xml:space="preserve">
+    <value>&lt;div class="frame" id="frame"&gt;
+    &lt;div class="header"&gt;
+        &lt;div class="caption"&gt;${Caption}&lt;/div&gt;
+    	&lt;div class="close-button" id="closebutton"&gt;
+			&lt;img src="close" class="close-button-img" id="close"&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="content" id="content"&gt;
+    	&lt;img src="${MessageIcon}" class="message icon"&gt;
+    	&lt;div class="message text"&gt;${MessageText}&lt;/div&gt;
+    	&lt;div class="message button" tabindex="1" id="dialogresult-ok"&gt;Tamam&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="Uyarı.Styles" xml:space="preserve">
+    <value>body{	
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Segoe UI';
+}
+.frame {
+	width: 450px;
+	color: @ControlText;
+	background-color: @Window;
+	border: 1px solid @Yellow;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 8px 16px @Yellow/0.6;
+}
+.header {
+	padding: 8px;
+	color: @White;
+	background-color: @Yellow;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.caption {
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.close-button {
+	padding: 8px;
+	border-radius: 5px;
+}
+.close-button:hover {
+	background-color: @WindowText/0.1;
+}
+.close-button:active {
+	background-color: @ControlText/0.05;
+}
+.close-button-img {
+	fill: White;
+	width: 18px;
+	height: 18px;
+	opacity: 0.8;
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.message {
+	margin: 7px;
+	word-wrap: break-word;
+	font-size: 18px;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	opacity: 0.8;
+}
+.text {
+	color: @ControlText;
+	text-align: center;
+}
+.button {
+	color: @Yellow;
+	padding: 8px 24px;
+	border: 1px solid @Yellow;
+	border-radius: 5px;
+}
+.button:hover {
+	color: @White;
+	background-color: @Yellow;
+	box-shadow: 0px 0px 10px @Yellow/0.5;
+}</value>
+  </data>
+  <data name="Uyarı.Template" xml:space="preserve">
+    <value>&lt;div class="frame" id="frame"&gt;
+    &lt;div class="header"&gt;
+        &lt;div class="caption"&gt;${Caption}&lt;/div&gt;
+    	&lt;div class="close-button" id="closebutton"&gt;
+			&lt;img src="close" class="close-button-img" id="close"&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="content" id="content"&gt;
+    	&lt;img src="${MessageIcon}" class="message icon"&gt;
+    	&lt;div class="message text"&gt;${MessageText}&lt;/div&gt;
+    	&lt;div class="message button" tabindex="1" id="dialogresult-ok"&gt;Tamam&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="Bilgi.Styles" xml:space="preserve">
+    <value>body{	
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Segoe UI';
+}
+.frame {
+	width: 450px;
+	color: @ControlText;
+	background-color: @Window;
+	border: 1px solid @Success;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 8px 16px @Success/0.6;
+}
+.header {
+	padding: 8px;
+	color: @White;
+	background-color: @Success;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.caption {
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.close-button {
+	padding: 8px;
+	border-radius: 5px;
+}
+.close-button:hover {
+	background-color: @WindowText/0.1;
+}
+.close-button:active {
+	background-color: @ControlText/0.05;
+}
+.close-button-img {
+	fill: White;
+	width: 18px;
+	height: 18px;
+	opacity: 0.8;
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.message {
+	margin: 7px;
+	word-wrap: break-word;
+	font-size: 18px;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	opacity: 0.8;
+}
+.text {
+	color: @ControlText;
+	text-align: center;
+}
+.button {
+	color: @Success;
+	padding: 8px 24px;
+	border: 1px solid @Success;
+	border-radius: 5px;
+}
+.button:hover {
+	color: @White;
+	background-color: @Success;
+	box-shadow: 0px 0px 10px @Success/0.5;
+}</value>
+  </data>
+  <data name="Bilgi.Template" xml:space="preserve">
+    <value>&lt;div class="frame" id="frame"&gt;
+    &lt;div class="header"&gt;
+        &lt;div class="caption"&gt;${Caption}&lt;/div&gt;
+    	&lt;div class="close-button" id="closebutton"&gt;
+			&lt;img src="close" class="close-button-img" id="close"&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="content" id="content"&gt;
+    	&lt;img src="${MessageIcon}" class="message icon"&gt;
+    	&lt;div class="message text"&gt;${MessageText}&lt;/div&gt;
+    	&lt;div class="message button" tabindex="1" id="dialogresult-ok"&gt;Tamam&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="Soru.Styles" xml:space="preserve">
+    <value>body{	
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Segoe UI';
+}
+.frame {
+	width: 450px;
+	color: @ControlText;
+	background-color: @Window;
+	border: 1px solid @Primary;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 8px 16px @Primary/0.6;
+}
+.header {
+	padding: 8px;
+	color: @White;
+	background-color: @Primary;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.caption {
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.close-button {
+	padding: 8px;
+	border-radius: 5px;
+}
+.close-button:hover {
+	background-color: @WindowText/0.1;
+}
+.close-button:active {
+	background-color: @ControlText/0.05;
+}
+.close-button-img {
+	fill: White;
+	width: 18px;
+	height: 18px;
+	opacity: 0.8;
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.message {
+	margin: 7px;
+	word-wrap: break-word;
+	font-size: 18px;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	opacity: 0.8;
+}
+.text {
+	color: @ControlText;
+	text-align: center;
+}
+.button {
+	color: @Primary;
+	padding: 8px 24px;
+	border: 1px solid @Primary;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.button:hover {
+	color: @White;
+	background-color: @Primary;
+	box-shadow: 0px 0px 10px @Primary/0.5;
+}
+.buttons {
+	margin: 10px;
+	display: flex;
+	justify-content: flex-end;
+}</value>
+  </data>
+  <data name="Soru.Template" xml:space="preserve">
+    <value>&lt;div class="frame" id="frame"&gt;
+    &lt;div class="header"&gt;
+        &lt;div class="caption"&gt;${Caption}&lt;/div&gt;
+    	&lt;div class="close-button" id="closebutton"&gt;
+			&lt;img src="close" class="close-button-img" id="close"&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="content" id="content"&gt;
+    	&lt;img src="${MessageIcon}" class="message icon"&gt;
+    	&lt;div class="message text"&gt;${MessageText}&lt;/div&gt;
+    	&lt;div class="buttons"&gt;
+			&lt;div class="button" tabindex="1" id="dialogresult-ok"&gt;Tamam&lt;/div&gt;
+			&lt;div class="button" tabindex="2" id="dialogresult-cancel"&gt;İptal&lt;/div&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="print.Styles" xml:space="preserve">
+    <value>body{	
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Segoe UI';
+}
+.frame {
+	width: 450px;
+	color: @ControlText;
+	background-color: @Window;
+	border: 1px solid @Primary;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 8px 16px @Primary/0.6;
+}
+.header {
+	padding: 8px;
+	color: @White;
+	background-color: @Primary;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.caption {
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.close-button {
+	padding: 8px;
+	border-radius: 5px;
+}
+.close-button:hover {
+	background-color: @WindowText/0.1;
+}
+.close-button:active {
+	background-color: @ControlText/0.05;
+}
+.close-button-img {
+	fill: White;
+	width: 18px;
+	height: 18px;
+	opacity: 0.8;
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.message {
+	margin: 7px;
+	word-wrap: break-word;
+	font-size: 18px;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	opacity: 0.8;
+}
+.text {
+	color: @ControlText;
+	text-align: center;
+}
+.button {
+	color: @Primary;
+	padding: 8px 24px;
+	border: 1px solid @Primary;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.button:hover {
+	color: @White;
+	background-color: @Primary;
+	box-shadow: 0px 0px 10px @Primary/0.5;
+}
+.buttons {
+	margin: 10px;
+	display: flex;
+	justify-content: flex-end;
+}</value>
+  </data>
+  <data name="print.Template" xml:space="preserve">
+    <value>&lt;div class="frame" id="frame"&gt;
+    &lt;div class="header"&gt;
+        &lt;div class="caption"&gt;${Caption}&lt;/div&gt;
+    	&lt;div class="close-button" id="closebutton"&gt;
+			&lt;img src="close" class="close-button-img" id="close"&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="content" id="content"&gt;
+    	&lt;img src="${MessageIcon}" class="message icon"&gt;
+    	&lt;div class="message text"&gt;${MessageText}&lt;/div&gt;
+    	&lt;div class="buttons"&gt;
+			&lt;div class="button" tabindex="1" id="dialogresult-ok"&gt;Görüntüle&lt;/div&gt;
+			&lt;div class="button" tabindex="2" id="dialogresult-cancel"&gt;Yazdır&lt;/div&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

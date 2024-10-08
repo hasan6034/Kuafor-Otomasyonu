@@ -32,6 +32,8 @@ namespace Kuafor_Otomasyonu
                     KullanicilarDTO kullanici = _kullaniciService.KullaniciGiris(Settings.Default.KullaniciAdi, Settings.Default.Sifre);
                     StaticClass.KulID = kullanici.KulID;
                     StaticClass.RoleID = kullanici.RolID;
+                    StaticClass.AdSoyad = kullanici.AdSoyad;
+                    StaticClass.KulAdi = Settings.Default.KullaniciAdi;
                     StaticClass.Yetkiler = _kullaniciService.RolYetkileriGetir(StaticClass.RoleID);
                     Application.Run(new frmAnaEkran());
                 }

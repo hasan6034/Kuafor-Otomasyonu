@@ -88,6 +88,7 @@
             this.tileItem_KullaniciIslemleri.Id = 0;
             this.tileItem_KullaniciIslemleri.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_KullaniciIslemleri.Name = "tileItem_KullaniciIslemleri";
+            this.tileItem_KullaniciIslemleri.Visible = false;
             this.tileItem_KullaniciIslemleri.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_KullaniciIslemleri_ItemClick);
             // 
             // tileItem_RolTanimlama
@@ -99,6 +100,7 @@
             this.tileItem_RolTanimlama.Id = 1;
             this.tileItem_RolTanimlama.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_RolTanimlama.Name = "tileItem_RolTanimlama";
+            this.tileItem_RolTanimlama.Visible = false;
             this.tileItem_RolTanimlama.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_RolTanimlama_ItemClick);
             // 
             // tileGroup_IsletmeAyarlari
@@ -117,6 +119,7 @@
             this.tileItem_Subeler.Id = 2;
             this.tileItem_Subeler.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Subeler.Name = "tileItem_Subeler";
+            this.tileItem_Subeler.Visible = false;
             // 
             // tileItem_Hizmetler
             // 
@@ -127,6 +130,7 @@
             this.tileItem_Hizmetler.Id = 3;
             this.tileItem_Hizmetler.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Hizmetler.Name = "tileItem_Hizmetler";
+            this.tileItem_Hizmetler.Visible = false;
             // 
             // tileGroup_Musteri
             // 
@@ -144,6 +148,7 @@
             this.tileItem_MusteriIslemleri.Id = 4;
             this.tileItem_MusteriIslemleri.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_MusteriIslemleri.Name = "tileItem_MusteriIslemleri";
+            this.tileItem_MusteriIslemleri.Visible = false;
             // 
             // tileItem_Randevu
             // 
@@ -154,6 +159,7 @@
             this.tileItem_Randevu.Id = 5;
             this.tileItem_Randevu.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Randevu.Name = "tileItem_Randevu";
+            this.tileItem_Randevu.Visible = false;
             // 
             // tileGroup_Raporlar
             // 
@@ -172,6 +178,7 @@
             this.tileItem_MusteriRaporu.Id = 7;
             this.tileItem_MusteriRaporu.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_MusteriRaporu.Name = "tileItem_MusteriRaporu";
+            this.tileItem_MusteriRaporu.Visible = false;
             // 
             // tileItem_PersonelBazliRapor
             // 
@@ -182,6 +189,7 @@
             this.tileItem_PersonelBazliRapor.Id = 8;
             this.tileItem_PersonelBazliRapor.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_PersonelBazliRapor.Name = "tileItem_PersonelBazliRapor";
+            this.tileItem_PersonelBazliRapor.Visible = false;
             // 
             // tileItem_SubeBazliRapor
             // 
@@ -192,6 +200,7 @@
             this.tileItem_SubeBazliRapor.Id = 9;
             this.tileItem_SubeBazliRapor.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_SubeBazliRapor.Name = "tileItem_SubeBazliRapor";
+            this.tileItem_SubeBazliRapor.Visible = false;
             // 
             // tileGroup_Oturum
             // 

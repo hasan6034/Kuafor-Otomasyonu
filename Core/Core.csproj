@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\KullanicilarDTO.cs" />
+    <Compile Include="DTOs\MenuGetirDTO.cs" />
     <Compile Include="DTOs\RollerDTO.cs" />
     <Compile Include="DTOs\RolYetkileriDTO.cs" />
     <Compile Include="DTOs\SonucDTO.cs" />

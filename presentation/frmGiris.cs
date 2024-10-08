@@ -58,6 +58,7 @@ namespace Kuafor_Otomasyonu
                 KullanicilarDTO kullanici = _kullaniciService.KullaniciGiris(kullaniciAdi, sifre.ToString());
                 StaticClass.KulID = kullanici.KulID;
                 StaticClass.RoleID = kullanici.RolID;
+                StaticClass.AdSoyad = kullanici.AdSoyad;
                 if (checkEdit_BeniHatirla.Checked)
                 {
                     Settings.Default.KullaniciAdi = kullaniciAdi;
@@ -70,6 +71,7 @@ namespace Kuafor_Otomasyonu
                     Settings.Default.Sifre = "";
                     Settings.Default.Save();
                 }
+                StaticClass.KulAdi = kullaniciAdi;
                 StaticClass.Yetkiler = _kullaniciService.RolYetkileriGetir(StaticClass.RoleID);
                 frmAnaEkran anaEkran = new frmAnaEkran();
                 anaEkran.Show();

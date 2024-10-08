@@ -37,6 +37,20 @@ namespace Repository.Repositories
             }
         }
 
+        public IEnumerable<MenuGetirDTO> MenuGetir(int rolID)
+        {
+            using (var con = new SqlConnection(_connectionString))
+            {
+                var parameters = new
+                {
+                    RolID = rolID
+                };
+
+                return con.Query<MenuGetirDTO>(MENU_GETIR, parameters, commandType: CommandType.Text);
+            }
+        }
+
         private readonly string UYGULAMA_HATA_KAYDET = "log.UygulamaHataKaydet";
+        private readonly string MENU_GETIR = "select * from dbo.tfMenuGetir(@RolID)";
     }
 }

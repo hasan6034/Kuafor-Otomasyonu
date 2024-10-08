@@ -107,5 +107,10 @@ namespace Kuafor_Otomasyonu
                 acikForm.Activate();
             }
         }
+
+        private void tileItem_Subeler_ItemClick(object sender, TileItemEventArgs e)
+        {
+            FormAc<frmSubeler>();
+        }
     }
 }

@@ -120,6 +120,7 @@
             this.tileItem_Subeler.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_Subeler.Name = "tileItem_Subeler";
             this.tileItem_Subeler.Visible = false;
+            this.tileItem_Subeler.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_Subeler_ItemClick);
             // 
             // tileItem_Hizmetler
             // 

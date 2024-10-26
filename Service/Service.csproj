@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenelService.cs" />
     <Compile Include="Services\KullaniciService.cs" />
+    <Compile Include="Services\SubeService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">

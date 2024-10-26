@@ -46,12 +46,15 @@
     <Compile Include="DTOs\RollerDTO.cs" />
     <Compile Include="DTOs\RolYetkileriDTO.cs" />
     <Compile Include="DTOs\SonucDTO.cs" />
+    <Compile Include="DTOs\SubeDTO.cs" />
     <Compile Include="Enums\Durumlar.cs" />
     <Compile Include="Enums\Sayfalar.cs" />
     <Compile Include="IRepositories\IGenelRepository.cs" />
     <Compile Include="IRepositories\IKullaniciRepository.cs" />
+    <Compile Include="IRepositories\ISubeRepository.cs" />
     <Compile Include="IServices\IGenelService.cs" />
     <Compile Include="IServices\IKullaniciService.cs" />
+    <Compile Include="IServices\ISubeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

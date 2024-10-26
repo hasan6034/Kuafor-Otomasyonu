@@ -1,0 +1,11 @@
+Core/bin/
+Core/obj/
+presentation/.vs/
+presentation/bin/
+presentation/obj/
+Repository/bin/
+Repository/obj/
+Service/bin/
+Service/obj/
+.env
+.secret

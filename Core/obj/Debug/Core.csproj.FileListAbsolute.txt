@@ -1,6 +1,0 @@
-C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Core\bin\Debug\Core.dll
-C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Core\bin\Debug\Core.pdb
-C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Core\obj\Debug\Core.csproj.AssemblyReference.cache
-C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Core\obj\Debug\Core.dll
-C:\Users\lenovo\Documents\GitHub\Kuafor-Otomasyonu\Core\obj\Debug\Core.pdb

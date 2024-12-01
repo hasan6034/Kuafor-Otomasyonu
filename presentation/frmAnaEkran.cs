@@ -14,6 +14,11 @@ namespace Kuafor_Otomasyonu
 {
     public partial class frmAnaEkran : XtraForm
     {
+
+
+
+
+
         public frmAnaEkran()
         {
             InitializeComponent();
@@ -24,6 +29,7 @@ namespace Kuafor_Otomasyonu
 
         private void frmAnaEkran_Load(object sender, EventArgs e)
         {
+            timer1.Start();
             tileControl_Menu.ShowGroupText = true;
             this.Text = this.Text + " - " + StaticClass.AdSoyad;
             IEnumerable<MenuGetirDTO> i = _genelService.MenuGetir(StaticClass.RoleID);
@@ -111,6 +117,27 @@ namespace Kuafor_Otomasyonu
         private void tileItem_Subeler_ItemClick(object sender, TileItemEventArgs e)
         {
             FormAc<frmSubeler>();
+            
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Burada bir şey yok (: ");
+        }
+
+        private void tileItem_Hizmetler_ItemClick(object sender, TileItemEventArgs e)
+        {
+            FormAc<FrmHizmetIslemleri>();  
+
+        }
+
+        
+
+
     }
 }

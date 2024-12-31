@@ -9,3 +9,5 @@ Service/bin/
 Service/obj/
 .env
 .secret
+presentation/Properties/licenses.licx
+presentation/Properties/licenses.licx.bak

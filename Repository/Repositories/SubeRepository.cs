@@ -31,6 +31,39 @@ namespace Repository.Repositories
             }
         }
 
+        public SonucDTO SubeEkle(int subeID, string subeAdi, string telefon, string adres, int sayfaID, int olusturanKulID)
+        {
+            using (var con = new SqlConnection(_connectionString))
+            {
+                var parameters = new
+                {
+                    SubeID = subeID,
+                    SubeAdi = subeAdi,
+                    Telefon = telefon,
+                    Adres = adres,
+                    SayfaID = sayfaID,
+                    OlusturanKulID = olusturanKulID
+                };
+                return con.QuerySingle<SonucDTO>(SUBE_EKLE, parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public SonucDTO SubeSil(int subeID, int sayfaID, int olusturanKulID)
+        {
+            using (var con = new SqlConnection(_connectionString))
+            {
+                var parameters = new
+                {
+                    SubeID = subeID,
+                    SayfaID = sayfaID,
+                    OlusturanKulID = olusturanKulID
+                };
+                return con.QuerySingle<SonucDTO>(SUBE_SIL, parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
         private readonly string SUBE_LISTESI = "select * from tfSubeler(@SubeID)";
+        private readonly string SUBE_EKLE = "SubeSAVE"; // Stored Procedure for adding a branch
+        private readonly string SUBE_SIL = "SubeDELETE"; // Stored Procedure for deleting a branch
     }
 }

@@ -21,5 +21,14 @@ namespace Service.Services
             return _subeRepository.SubeList(subeID);
         }
 
+        public SonucDTO SubeEkle(int subeID, string subeAdi, string telefon, string adres, int sayfaID, int olusturanKulID)
+        {
+            return _subeRepository.SubeEkle(subeID, subeAdi, telefon, adres, sayfaID, olusturanKulID);
+        }
+
+        public SonucDTO SubeSil(int subeID, int sayfaID, int olusturanKulID)
+        {
+            return _subeRepository.SubeSil(subeID, sayfaID, olusturanKulID);
+        }
     }
 }

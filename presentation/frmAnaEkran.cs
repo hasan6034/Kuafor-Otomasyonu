@@ -2,6 +2,7 @@
 using Core.Enums;
 using Core.IServices;
 using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using Repository.Repositories;
 using Service.Services;
 using System;
@@ -136,7 +137,18 @@ namespace Kuafor_Otomasyonu
 
         }
 
-        
+        private void tileItem_SubeBazliRapor_ItemClick(object sender, TileItemEventArgs e)
+        {
+            // Rapor nesnesini oluştur (senin tasarladığın rapor sınıfı olmalı)
+            XtraReport report = new Raporla_SubeGelirDurumu(); // veya var report = new XtraReport1();
+
+            // Gerekirse parametre veya veri kaynağı ayarla
+            // report.DataSource = ...;
+
+            // Raporu ön izleme penceresinde göster
+            ReportPrintTool printTool = new ReportPrintTool(report);
+            printTool.ShowPreview();  // ShowPreviewDialog() da kullanılabilir
+        }
 
 
     }

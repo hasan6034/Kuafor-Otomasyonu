@@ -113,6 +113,12 @@
     <Compile Include="GenelFonksiyonlar.Designer.cs">
       <DependentUpon>GenelFonksiyonlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonelBazliRapor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PersonelBazliRapor.Designer.cs">
+      <DependentUpon>PersonelBazliRapor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Raporla_SubeGelirDurumu.cs">
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GenelFonksiyonlar.resx">
       <DependentUpon>GenelFonksiyonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelBazliRapor.resx">
+      <DependentUpon>PersonelBazliRapor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

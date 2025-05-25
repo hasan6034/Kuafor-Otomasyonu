@@ -34,12 +34,14 @@
             DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement1 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement2 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             this.tileViewColumn_SubeAdi = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.tileViewColumn_Adres = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textEdit_SubeAdi = new DevExpress.XtraEditors.TextEdit();
             this.groupControl_SubeListesi = new DevExpress.XtraEditors.GroupControl();
             this.gridControl_SubeListesi = new DevExpress.XtraGrid.GridControl();
             this.tileView_SubeListesi = new DevExpress.XtraGrid.Views.Tile.TileView();
             this.tileViewColumn_SubeID = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.tileViewColumn_TelefonNo = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.simpleButton_Sil = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton_Kaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -47,8 +49,6 @@
             this.memoEdit_Adres = new DevExpress.XtraEditors.MemoEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.textEdit_TelefonNo = new DevExpress.XtraEditors.TextEdit();
-            this.tileViewColumn_TelefonNo = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.tileViewColumn_Adres = new DevExpress.XtraGrid.Columns.TileViewColumn();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_SubeAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl_SubeListesi)).BeginInit();
             this.groupControl_SubeListesi.SuspendLayout();
@@ -67,25 +67,39 @@
             // tileViewColumn_SubeAdi
             // 
             this.tileViewColumn_SubeAdi.FieldName = "SubeAdi";
+            this.tileViewColumn_SubeAdi.MinWidth = 23;
             this.tileViewColumn_SubeAdi.Name = "tileViewColumn_SubeAdi";
             this.tileViewColumn_SubeAdi.Visible = true;
             this.tileViewColumn_SubeAdi.VisibleIndex = 0;
+            this.tileViewColumn_SubeAdi.Width = 87;
+            // 
+            // tileViewColumn_Adres
+            // 
+            this.tileViewColumn_Adres.Caption = "Adres";
+            this.tileViewColumn_Adres.FieldName = "Adres";
+            this.tileViewColumn_Adres.MinWidth = 23;
+            this.tileViewColumn_Adres.Name = "tileViewColumn_Adres";
+            this.tileViewColumn_Adres.Visible = true;
+            this.tileViewColumn_Adres.VisibleIndex = 1;
+            this.tileViewColumn_Adres.Width = 87;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 29);
+            this.label1.Location = new System.Drawing.Point(18, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Şube Adı :";
             // 
             // textEdit_SubeAdi
             // 
             this.textEdit_SubeAdi.EnterMoveNextControl = true;
-            this.textEdit_SubeAdi.Location = new System.Drawing.Point(77, 21);
+            this.textEdit_SubeAdi.Location = new System.Drawing.Point(90, 26);
+            this.textEdit_SubeAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit_SubeAdi.Name = "textEdit_SubeAdi";
-            this.textEdit_SubeAdi.Size = new System.Drawing.Size(292, 28);
+            this.textEdit_SubeAdi.Size = new System.Drawing.Size(341, 34);
             this.textEdit_SubeAdi.TabIndex = 0;
             // 
             // groupControl_SubeListesi
@@ -93,18 +107,21 @@
             this.groupControl_SubeListesi.Controls.Add(this.gridControl_SubeListesi);
             this.groupControl_SubeListesi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl_SubeListesi.Location = new System.Drawing.Point(0, 0);
+            this.groupControl_SubeListesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupControl_SubeListesi.Name = "groupControl_SubeListesi";
-            this.groupControl_SubeListesi.Size = new System.Drawing.Size(352, 427);
+            this.groupControl_SubeListesi.Size = new System.Drawing.Size(411, 526);
             this.groupControl_SubeListesi.TabIndex = 0;
             this.groupControl_SubeListesi.Text = "Şube Listesi";
             // 
             // gridControl_SubeListesi
             // 
             this.gridControl_SubeListesi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl_SubeListesi.Location = new System.Drawing.Point(2, 29);
+            this.gridControl_SubeListesi.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl_SubeListesi.Location = new System.Drawing.Point(2, 36);
             this.gridControl_SubeListesi.MainView = this.tileView_SubeListesi;
+            this.gridControl_SubeListesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl_SubeListesi.Name = "gridControl_SubeListesi";
-            this.gridControl_SubeListesi.Size = new System.Drawing.Size(348, 396);
+            this.gridControl_SubeListesi.Size = new System.Drawing.Size(407, 488);
             this.gridControl_SubeListesi.TabIndex = 0;
             this.gridControl_SubeListesi.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tileView_SubeListesi});
@@ -116,6 +133,7 @@
             this.tileViewColumn_SubeID,
             this.tileViewColumn_TelefonNo,
             this.tileViewColumn_Adres});
+            this.tileView_SubeListesi.DetailHeight = 431;
             this.tileView_SubeListesi.GridControl = this.gridControl_SubeListesi;
             this.tileView_SubeListesi.Name = "tileView_SubeListesi";
             this.tileView_SubeListesi.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
@@ -152,12 +170,23 @@
             // tileViewColumn_SubeID
             // 
             this.tileViewColumn_SubeID.FieldName = "SubeID";
+            this.tileViewColumn_SubeID.MinWidth = 23;
             this.tileViewColumn_SubeID.Name = "tileViewColumn_SubeID";
+            this.tileViewColumn_SubeID.Width = 87;
+            // 
+            // tileViewColumn_TelefonNo
+            // 
+            this.tileViewColumn_TelefonNo.Caption = "Telefon";
+            this.tileViewColumn_TelefonNo.FieldName = "TelefonNo";
+            this.tileViewColumn_TelefonNo.MinWidth = 23;
+            this.tileViewColumn_TelefonNo.Name = "tileViewColumn_TelefonNo";
+            this.tileViewColumn_TelefonNo.Width = 87;
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainerControl1.Name = "splitContainerControl1";
             // 
             // splitContainerControl1.Panel1
@@ -176,24 +205,26 @@
             this.splitContainerControl1.Panel2.Controls.Add(this.label1);
             this.splitContainerControl1.Panel2.Controls.Add(this.textEdit_SubeAdi);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(758, 427);
-            this.splitContainerControl1.SplitterPosition = 352;
+            this.splitContainerControl1.Size = new System.Drawing.Size(884, 526);
+            this.splitContainerControl1.SplitterPosition = 411;
             this.splitContainerControl1.TabIndex = 2;
             // 
             // simpleButton_Sil
             // 
-            this.simpleButton_Sil.Location = new System.Drawing.Point(213, 248);
+            this.simpleButton_Sil.Location = new System.Drawing.Point(248, 305);
+            this.simpleButton_Sil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.simpleButton_Sil.Name = "simpleButton_Sil";
-            this.simpleButton_Sil.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton_Sil.Size = new System.Drawing.Size(88, 28);
             this.simpleButton_Sil.TabIndex = 12;
             this.simpleButton_Sil.Text = "Sil";
             this.simpleButton_Sil.Click += new System.EventHandler(this.simpleButton_Sil_Click);
             // 
             // simpleButton_Kaydet
             // 
-            this.simpleButton_Kaydet.Location = new System.Drawing.Point(294, 248);
+            this.simpleButton_Kaydet.Location = new System.Drawing.Point(343, 305);
+            this.simpleButton_Kaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.simpleButton_Kaydet.Name = "simpleButton_Kaydet";
-            this.simpleButton_Kaydet.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton_Kaydet.Size = new System.Drawing.Size(88, 28);
             this.simpleButton_Kaydet.TabIndex = 11;
             this.simpleButton_Kaydet.Text = "Kaydet";
             this.simpleButton_Kaydet.Click += new System.EventHandler(this.simpleButton_Kaydet_Click);
@@ -201,56 +232,48 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 128);
+            this.label2.Location = new System.Drawing.Point(34, 158);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.Size = new System.Drawing.Size(49, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Adres :";
             // 
             // memoEdit_Adres
             // 
-            this.memoEdit_Adres.Location = new System.Drawing.Point(77, 121);
+            this.memoEdit_Adres.Location = new System.Drawing.Point(90, 149);
+            this.memoEdit_Adres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.memoEdit_Adres.Name = "memoEdit_Adres";
-            this.memoEdit_Adres.Size = new System.Drawing.Size(292, 109);
+            this.memoEdit_Adres.Size = new System.Drawing.Size(341, 134);
             this.memoEdit_Adres.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 80);
+            this.label3.Location = new System.Drawing.Point(6, 98);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(78, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Telefon No :";
             // 
             // textEdit_TelefonNo
             // 
             this.textEdit_TelefonNo.EnterMoveNextControl = true;
-            this.textEdit_TelefonNo.Location = new System.Drawing.Point(77, 73);
+            this.textEdit_TelefonNo.Location = new System.Drawing.Point(90, 90);
+            this.textEdit_TelefonNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit_TelefonNo.Name = "textEdit_TelefonNo";
-            this.textEdit_TelefonNo.Size = new System.Drawing.Size(292, 28);
+            this.textEdit_TelefonNo.Size = new System.Drawing.Size(341, 34);
             this.textEdit_TelefonNo.TabIndex = 7;
-            // 
-            // tileViewColumn_TelefonNo
-            // 
-            this.tileViewColumn_TelefonNo.Caption = "Telefon";
-            this.tileViewColumn_TelefonNo.FieldName = "TelefonNo";
-            this.tileViewColumn_TelefonNo.Name = "tileViewColumn_TelefonNo";
-            // 
-            // tileViewColumn_Adres
-            // 
-            this.tileViewColumn_Adres.Caption = "Adres";
-            this.tileViewColumn_Adres.FieldName = "Adres";
-            this.tileViewColumn_Adres.Name = "tileViewColumn_Adres";
-            this.tileViewColumn_Adres.Visible = true;
-            this.tileViewColumn_Adres.VisibleIndex = 1;
             // 
             // frmSubeler
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 427);
+            this.ClientSize = new System.Drawing.Size(884, 526);
             this.Controls.Add(this.splitContainerControl1);
+            this.IconOptions.Image = global::Kuafor_Otomasyonu.Properties.Resources.Kuafor;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmSubeler";
             this.Text = "Şube İşlemleri";
             this.Load += new System.EventHandler(this.frmSubeler_Load);

@@ -139,17 +139,22 @@ namespace Kuafor_Otomasyonu
 
         private void tileItem_SubeBazliRapor_ItemClick(object sender, TileItemEventArgs e)
         {
-            // Rapor nesnesini oluştur (senin tasarladığın rapor sınıfı olmalı)
-            XtraReport report = new Raporla_SubeGelirDurumu(); // veya var report = new XtraReport1();
+            
+            XtraReport report = new Raporla_SubeGelirDurumu(); 
 
-            // Gerekirse parametre veya veri kaynağı ayarla
-            // report.DataSource = ...;
-
-            // Raporu ön izleme penceresinde göster
+            
             ReportPrintTool printTool = new ReportPrintTool(report);
-            printTool.ShowPreview();  // ShowPreviewDialog() da kullanılabilir
+            printTool.ShowPreview();  
         }
 
+        private void tileItem_PersonelBazliRapor_ItemClick(object sender, TileItemEventArgs e)
+        {
+            XtraReport report = new PersonelBazliRapor();
 
+
+            ReportPrintTool printTool = new ReportPrintTool(report);
+            printTool.ShowPreview();
+
+        }
     }
 }

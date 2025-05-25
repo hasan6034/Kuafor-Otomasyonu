@@ -198,6 +198,7 @@
             this.tileItem_PersonelBazliRapor.Id = 8;
             this.tileItem_PersonelBazliRapor.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem_PersonelBazliRapor.Name = "tileItem_PersonelBazliRapor";
+            this.tileItem_PersonelBazliRapor.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem_PersonelBazliRapor_ItemClick);
             // 
             // tileItem_SubeBazliRapor
             // 
@@ -256,7 +257,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAnaEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kmu Berber Otomasyonu";
+            this.Text = "Kmü Kuaför Otomasyonu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAnaEkran_FormClosed);
             this.Load += new System.EventHandler(this.frmAnaEkran_Load);

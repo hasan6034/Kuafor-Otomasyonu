@@ -431,7 +431,7 @@
             this.customerAddress.Name = "customerAddress";
             this.customerAddress.StylePriority.UseFont = false;
             this.customerAddress.StylePriority.UseTextAlignment = false;
-            this.customerAddress.Text = "VERGİ NO:6621270237";
+            this.customerAddress.Text = "VERGİ NO:6621270230";
             this.customerAddress.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.customerAddress.Weight = 1.3674163189595685D;
             // 

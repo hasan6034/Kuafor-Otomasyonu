@@ -7,16 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace Kuafor_Otomasyonu
 {
-    public partial class FrmHizmetIslemleri : Form
+    public partial class FrmHizmetIslemleri : DevExpress.XtraEditors.XtraForm
     {
         public FrmHizmetIslemleri()
         {
             InitializeComponent();
         }
-
-        
     }
 }

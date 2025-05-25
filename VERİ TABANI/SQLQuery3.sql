@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [Kuafor]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Database [Kuafor]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE DATABASE [Kuafor]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -84,25 +84,25 @@ ALTER DATABASE [Kuafor] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_PO
 GO
 USE [Kuafor]
 GO
-/****** Object:  Schema [log]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Schema [log]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE SCHEMA [log]
 GO
-/****** Object:  UserDefinedDataType [dbo].[barkod_str]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedDataType [dbo].[barkod_str]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE TYPE [dbo].[barkod_str] FROM [nvarchar](50) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[belgeno_str]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedDataType [dbo].[belgeno_str]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE TYPE [dbo].[belgeno_str] FROM [nvarchar](50) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[cihazseri_str]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedDataType [dbo].[cihazseri_str]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE TYPE [dbo].[cihazseri_str] FROM [nvarchar](50) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[evrakseri_str]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedDataType [dbo].[evrakseri_str]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE TYPE [dbo].[evrakseri_str] FROM [nvarchar](20) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[nvarchar_maxhesapisimno]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedDataType [dbo].[nvarchar_maxhesapisimno]    Script Date: 25.05.2025 18:02:38 ******/
 CREATE TYPE [dbo].[nvarchar_maxhesapisimno] FROM [nvarchar](90) NULL
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnCountRoldekiUser]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnCountRoldekiUser]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -110,7 +110,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2023-10-05
--- Description:	Role Kayýtlý Kullanýcý Sayýsýný Döner
+-- Description:	Role KayÄ±tlÄ± KullanÄ±cÄ± SayÄ±sÄ±nÄ± DÃ¶ner
 -- =============================================
 CREATE FUNCTION [dbo].[fnCountRoldekiUser] 
 (
@@ -128,7 +128,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetKulTamIsimByID]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetKulTamIsimByID]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -139,7 +139,7 @@ BEGIN
 	RETURN isnull((select u.Adi + ' ' + u.Soyadi from dbo.Kullanicilar u where u.KulID = @KulID), '');
 END;
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetModulAdiBySayfaID]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetModulAdiBySayfaID]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -147,7 +147,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	SayfaID den ModulAdi Döner
+-- Description:	SayfaID den ModulAdi DÃ¶ner
 -- =============================================
 CREATE FUNCTION [dbo].[fnGetModulAdiBySayfaID]
 (
@@ -161,7 +161,7 @@ declare @ModulID int = (select ModulID from dbo.stSayfalar where SayfaID = @Sayf
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetRolAdiByID]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetRolAdiByID]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -169,7 +169,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	RolID den RolAdi Döner
+-- Description:	RolID den RolAdi DÃ¶ner
 -- =============================================
 CREATE FUNCTION [dbo].[fnGetRolAdiByID]
 (
@@ -182,7 +182,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetSayfaAdiByID]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetSayfaAdiByID]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -190,7 +190,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	SayfaID den SayfaAdi Döner
+-- Description:	SayfaID den SayfaAdi DÃ¶ner
 -- =============================================
 CREATE FUNCTION [dbo].[fnGetSayfaAdiByID]
 (
@@ -203,7 +203,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetYetkiKontrol]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetYetkiKontrol]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -211,12 +211,12 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-04
--- Description:	Kullanýcý Yetkisi Döner
+-- Description:	KullanÄ±cÄ± Yetkisi DÃ¶ner
 -- =============================================
 CREATE FUNCTION [dbo].[fnGetYetkiKontrol] 
 (
 	@SayfaID int,
-	@YetkiTuru int,/* 0: Okuma / 1: Yazma / 2: Düzenleme / 3: Silme */
+	@YetkiTuru int,/* 0: Okuma / 1: Yazma / 2: DÃ¼zenleme / 3: Silme */
 	@KulID int
 )
 RETURNS int
@@ -249,7 +249,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnValueParser]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnValueParser]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -266,7 +266,7 @@ BEGIN
 	RETURN @vSonuc;
 END;
 GO
-/****** Object:  Table [dbo].[Kullanicilar]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [dbo].[Kullanicilar]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -279,13 +279,14 @@ CREATE TABLE [dbo].[Kullanicilar](
 	[Adi] [varchar](50) NOT NULL,
 	[Soyadi] [varchar](50) NOT NULL,
 	[DurumID] [int] NOT NULL,
+	[Maas] [decimal](18, 0) NULL,
  CONSTRAINT [PK_Kullanici] PRIMARY KEY CLUSTERED 
 (
 	[KulID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfKullanicilar]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfKullanicilar]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -293,7 +294,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	KulID deðeri gelirse Tek Kullanýcý gelmezse Kullanýcý Listesi dönen fonksiyon
+-- Description:	KulID deÄŸeri gelirse Tek KullanÄ±cÄ± gelmezse KullanÄ±cÄ± Listesi dÃ¶nen fonksiyon
 -- =============================================
 CREATE FUNCTION [dbo].[tfKullanicilar]
 (	
@@ -319,7 +320,7 @@ RETURN
 		k.KulID = case when @KulID = -1 then k.KulID else @KulID end
 )
 GO
-/****** Object:  Table [dbo].[Roller]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [dbo].[Roller]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -337,7 +338,7 @@ CREATE TABLE [dbo].[Roller](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfRoller]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfRoller]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -345,7 +346,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	RolID deðeri gelirse Tek Rol gelmezse Rol Listesi dönen fonksiyon
+-- Description:	RolID deÄŸeri gelirse Tek Rol gelmezse Rol Listesi dÃ¶nen fonksiyon
 -- =============================================
 CREATE FUNCTION [dbo].[tfRoller]
 (	
@@ -363,14 +364,14 @@ RETURN
 	select 
 		r.RolID					as "RolID",
 		r.RolAdi				as "RolAdi",
-		'Kullanýcý Sayýsý: '+cast(dbo.fnCountRoldekiUser(r.RolID) as nvarchar(32)) as "KullaniciSayisi"
+		'KullanÄ±cÄ± SayÄ±sÄ±: '+cast(dbo.fnCountRoldekiUser(r.RolID) as nvarchar(32)) as "KullaniciSayisi"
 	from
 		dbo.Roller r
 	where 
 		r.RolID = case when @RolID = -1 then r.RolID else @RolID end
 )
 GO
-/****** Object:  Table [dbo].[RolYetkileri]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [dbo].[RolYetkileri]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -391,7 +392,7 @@ CREATE TABLE [dbo].[RolYetkileri](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[stSayfalar]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [dbo].[stSayfalar]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -406,7 +407,7 @@ CREATE TABLE [dbo].[stSayfalar](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfRolYetkileriByRolID]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfRolYetkileriByRolID]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -414,7 +415,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Role Tanýmlý Yetkileri Döner
+-- Description:	Role TanÄ±mlÄ± Yetkileri DÃ¶ner
 -- =============================================
 CREATE FUNCTION [dbo].[tfRolYetkileriByRolID]
 (	
@@ -444,7 +445,7 @@ RETURN
 		s.SayfaID
 )
 GO
-/****** Object:  Table [dbo].[stModuller]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [dbo].[stModuller]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -458,7 +459,7 @@ CREATE TABLE [dbo].[stModuller](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfMenuGetir]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfMenuGetir]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -466,7 +467,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-08
--- Description:	Menü Listesi dönen fonksiyon
+-- Description:	MenÃ¼ Listesi dÃ¶nen fonksiyon
 -- =============================================
 CREATE FUNCTION [dbo].[tfMenuGetir](@RolID int)
 RETURNS TABLE 
@@ -487,7 +488,7 @@ RETURN
 
 )
 GO
-/****** Object:  Table [dbo].[Subeler]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [dbo].[Subeler]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -505,7 +506,7 @@ CREATE TABLE [dbo].[Subeler](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfSubeler]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfSubeler]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -513,7 +514,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	SubeID deðeri gelirse Tek Þube gelmezse Þube Listesi dönen fonksiyon
+-- Description:	SubeID deÄŸeri gelirse Tek Åžube gelmezse Åžube Listesi dÃ¶nen fonksiyon
 -- =============================================
 CREATE FUNCTION [dbo].[tfSubeler]
 (	
@@ -535,7 +536,7 @@ RETURN
 		s.Durum = 1
 )
 GO
-/****** Object:  Table [log].[Hatalar]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [log].[Hatalar]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -550,7 +551,7 @@ CREATE TABLE [log].[Hatalar](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [log].[UygulamaHatalari]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  Table [log].[UygulamaHatalari]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -570,11 +571,23 @@ CREATE TABLE [log].[UygulamaHatalari](
 GO
 SET IDENTITY_INSERT [dbo].[Kullanicilar] ON 
 GO
-INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID]) VALUES (-1, N'', N'', -1, N'Yeni Kullanýcý Ekle', N'', -1)
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (-1, N'', N'', -1, N'Yeni KullanÄ±cÄ± Ekle', N'', -1, NULL)
 GO
-INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID]) VALUES (24, N'hasan', N'1234', 2, N'Hasan Basri', N'OY', 1)
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (24, N'Hasan', N'1234', 2, N'Hasan Basri', N'OY', 1, CAST(57846 AS Decimal(18, 0)))
 GO
-INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID]) VALUES (28, N'caner', N'1234', 2, N'Caner', N'ORAK', 1)
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (28, N'caner', N'1234', 2, N'Caner', N'ORAK', 1, CAST(57964 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (29, N'Melih', N'1234', 6, N'Melih', N'TatlÄ±pÄ±nar', 1, CAST(32104 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (30, N'Burak', N'1234', 5, N'Burak', N'Ã‡eÃ§en', 0, CAST(22104 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (31, N'KÃ¼rÅŸat', N'1234', 7, N'KÃ¼rÅŸat', N'Kutluyer', 1, CAST(30104 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (32, N'Zafer', N'1234', 5, N'Zafer', N'ÅžimÅŸek', 1, CAST(22104 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (33, N'Ä°lyas', N'1234', 5, N'Ä°lyas', N'Civcik', 1, CAST(22104 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Kullanicilar] ([KulID], [KulAdi], [KulSifre], [RolID], [Adi], [Soyadi], [DurumID], [Maas]) VALUES (34, N'Ruhi', N'ruhi1234', 5, N'Ruhi', N'Ã‡enet', 1, CAST(22104 AS Decimal(18, 0)))
 GO
 SET IDENTITY_INSERT [dbo].[Kullanicilar] OFF
 GO
@@ -582,7 +595,11 @@ SET IDENTITY_INSERT [dbo].[Roller] ON
 GO
 INSERT [dbo].[Roller] ([RolID], [RolAdi], [OlusturanKulID], [OlusturmaTarihi], [GuncelleyenKulID], [GuncellemeTarihi]) VALUES (2, N'Admin', 24, CAST(N'2024-10-05T15:06:28.273' AS DateTime), 24, CAST(N'2024-10-05T15:17:37.007' AS DateTime))
 GO
-INSERT [dbo].[Roller] ([RolID], [RolAdi], [OlusturanKulID], [OlusturmaTarihi], [GuncelleyenKulID], [GuncellemeTarihi]) VALUES (5, N'Test', 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime), NULL, NULL)
+INSERT [dbo].[Roller] ([RolID], [RolAdi], [OlusturanKulID], [OlusturmaTarihi], [GuncelleyenKulID], [GuncellemeTarihi]) VALUES (5, N'Personel', 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime), 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
+GO
+INSERT [dbo].[Roller] ([RolID], [RolAdi], [OlusturanKulID], [OlusturmaTarihi], [GuncelleyenKulID], [GuncellemeTarihi]) VALUES (6, N'MÃ¼dÃ¼r', 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime), NULL, NULL)
+GO
+INSERT [dbo].[Roller] ([RolID], [RolAdi], [OlusturanKulID], [OlusturmaTarihi], [GuncelleyenKulID], [GuncellemeTarihi]) VALUES (7, N'MÃ¼dÃ¼r YardÄ±mcÄ±sÄ±', 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime), NULL, NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Roller] OFF
 GO
@@ -604,94 +621,130 @@ INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], 
 GO
 INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (2, 4003, 1, 1, 1, 1, 24, CAST(N'2024-10-05T15:17:37.007' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 1001, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 1001, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 1002, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 1002, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 2001, 1, 1, 1, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 2001, 1, 1, 1, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 2002, 1, 1, 1, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 2002, 1, 1, 1, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 3001, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 3001, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 3002, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 3002, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 4001, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 4001, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 4002, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 4002, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 4003, 0, 0, 0, 0, 24, CAST(N'2024-10-05T16:35:51.407' AS DateTime))
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (5, 4003, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:14:33.523' AS DateTime))
 GO
-INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (1000, N'Kullanýcý')
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 1001, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
 GO
-INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (2000, N'Ýþletme Ayarlarý')
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 1002, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
 GO
-INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (3000, N'Müþteri')
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 2001, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 2002, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 3001, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 3002, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 4001, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 4002, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (6, 4003, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:13.700' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 1001, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 1002, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 2001, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 2002, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 3001, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 3002, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 4001, 1, 1, 1, 1, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 4002, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[RolYetkileri] ([RolID], [SayfaID], [Okuma], [Yazma], [Duzenleme], [Silme], [OlusturanKulID], [OlusturmaTarihi]) VALUES (7, 4003, 0, 0, 0, 0, 28, CAST(N'2025-05-25T16:15:44.880' AS DateTime))
+GO
+INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (1000, N'KullanÄ±cÄ±')
+GO
+INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (2000, N'Ä°ÅŸletme AyarlarÄ±')
+GO
+INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (3000, N'MÃ¼ÅŸteri')
 GO
 INSERT [dbo].[stModuller] ([ModulID], [ModulAdi]) VALUES (4000, N'Rapor')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (1001, 1000, N'Kullanýcý Ýþlemleri')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (1001, 1000, N'KullanÄ±cÄ± Ä°ÅŸlemleri')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (1002, 1000, N'Kullanýcý Rol Tanýmlarý')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (1002, 1000, N'KullanÄ±cÄ± Rol TanÄ±mlarÄ±')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (2001, 2000, N'Þube Ýþlemleri')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (2001, 2000, N'Åžube Ä°ÅŸlemleri')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (2002, 2000, N'Hizmet Ýþlemleri')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (2002, 2000, N'Hizmet Ä°ÅŸlemleri')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (3001, 3000, N'Müþteri Ýþlemleri')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (3001, 3000, N'MÃ¼ÅŸteri Ä°ÅŸlemleri')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (3002, 3000, N'Randevu Ýþlemleri')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (3002, 3000, N'Randevu Ä°ÅŸlemleri')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (4001, 4000, N'Müþteri Bazlý Rapor')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (4001, 4000, N'MÃ¼ÅŸteri BazlÄ± Rapor')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (4002, 4000, N'Personel Bazlý Rapor')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (4002, 4000, N'Personel BazlÄ± Rapor')
 GO
-INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (4003, 4000, N'Þube Bazlý Rapor')
+INSERT [dbo].[stSayfalar] ([SayfaID], [ModulID], [SayfaAdi]) VALUES (4003, 4000, N'Åžube BazlÄ± Rapor')
 GO
 SET IDENTITY_INSERT [dbo].[Subeler] ON 
 GO
-INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (-1, N'Yeni Þube Ekle', N'', N'', 1, NULL)
+INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (-1, N'Yeni Åžube Ekle', N'', N'', 1, NULL)
 GO
-INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (3, N'ÖZ ORAK KUAFÖR', N'05528439530', N'Yeþilbayý.Mah/Saðduyu.Cad/NO:6 MAMA/ANKARA', 1, 10566)
+INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (3, N'Ã–Z ORAK KUAFÃ–R', N'05528439530', N'YeÅŸilbayÄ±.Mah/SaÄŸduyu.Cad/NO:6 MAMA/ANKARA', 1, 10566)
 GO
-INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (4, N'OY GÜZELLÝK MERKEZÝ', N'05380758134', N'Hamidiye.mah/100.yýl Bulvarý/NO:8 MERKEZ/KARAMAN', 1, 5165)
+INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (4, N'OY GÃœZELLÄ°K MERKEZÄ°', N'05380758134', N'Hamidiye.mah/100.yÄ±l BulvarÄ±/NO:8 MERKEZ/KARAMAN', 1, 5165)
 GO
-INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (5, N'ELDEM SAÇ VE TIRNAK BAKIM MERKEZÝ', N'05554443322', N'Yunus Emre.mah/Türk Dili sokaðý/NO:12 MERKEZ/KARAMAN', 1, 1243)
+INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (5, N'ELDEM SAÃ‡ VE TIRNAK BAKIM MERKEZÄ°', N'05554443322', N'Yunus Emre.mah/TÃ¼rk Dili sokaÄŸÄ±/NO:12 MERKEZ/KARAMAN', 1, 1243)
 GO
-INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (6, N'DÝLAN POLAT GÜZELLÝK MERKEZÝ', N'03124561235', N'SARI GAZÝ.MAH/FIRTINA.SK/NO:9 SANCAKTEPE/ÝSTANBUL', 1, 8850)
+INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (6, N'DÄ°LAN POLAT GÃœZELLÄ°K MERKEZÄ°', N'03124561235', N'SARI GAZÄ°.MAH/FIRTINA.SK/NO:9 SANCAKTEPE/Ä°STANBUL', 1, 8850)
 GO
-INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (7, N'DÝLEK TANRIVERDÝ GÜZELLÝK MERKEZÝ', N'05554443322', N'KURTULUÞ.SK/ÞEHÝTLER.CAD/NO:3 BEBEK/ÝSTANBUL', 0, NULL)
+INSERT [dbo].[Subeler] ([SubeID], [SubeAdi], [TelefonNo], [Adres], [Durum], [ToplamGelir]) VALUES (7, N'DÄ°LEK TANRIVERDÄ° GÃœZELLÄ°K MERKEZÄ°', N'05554443322', N'KURTULUÅž.SK/ÅžEHÄ°TLER.CAD/NO:3 BEBEK/Ä°STANBUL', 0, NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Subeler] OFF
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50010, N'Kullanýcý Adý ve/veya Þifre Hatalý.', N'Kullanýcý Bulunamadý.')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50010, N'KullanÄ±cÄ± AdÄ± ve/veya Åžifre HatalÄ±.', N'KullanÄ±cÄ± BulunamadÄ±.')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50011, N'Kullanýcý Durumu Pasif. Lütfen Yetkilinizle Görüþün.', N'Kullanýcý Durumu 1 deðil.')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50011, N'KullanÄ±cÄ± Durumu Pasif. LÃ¼tfen Yetkilinizle GÃ¶rÃ¼ÅŸÃ¼n.', N'KullanÄ±cÄ± Durumu 1 deÄŸil.')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50012, N'Kullanýcý Kaydý Bulunamadý', N'UserID -1 Deðil ve Kullanýcý Tablosunda yok')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50012, N'KullanÄ±cÄ± KaydÄ± BulunamadÄ±', N'UserID -1 DeÄŸil ve KullanÄ±cÄ± Tablosunda yok')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50013, N'Kullanýcý Adýný Kullanan Aktif Bir Kullanýcý Var.', N'Tabloda Kullanýcý Adina kayýtlý kullanýcý var.')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50013, N'KullanÄ±cÄ± AdÄ±nÄ± Kullanan Aktif Bir KullanÄ±cÄ± Var.', N'Tabloda KullanÄ±cÄ± Adina kayÄ±tlÄ± kullanÄ±cÄ± var.')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50020, N'Rol Kaydý Bulunamadý', N'RolID Tabloda Yok')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50020, N'Rol KaydÄ± BulunamadÄ±', N'RolID Tabloda Yok')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50021, N'Rol Adý Daha Önce Kullanýldý. Lütfen Deðiþtirip Tekrar Deneyin.', N'Ayný Rol Adý Var.')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50021, N'Rol AdÄ± Daha Ã–nce KullanÄ±ldÄ±. LÃ¼tfen DeÄŸiÅŸtirip Tekrar Deneyin.', N'AynÄ± Rol AdÄ± Var.')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50022, N'Kullanýcýya Tanýmlý Rol Silinenmez', N'Kullanýcýlar tablosunda olan RolID')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (50022, N'KullanÄ±cÄ±ya TanÄ±mlÄ± Rol Silinenmez', N'KullanÄ±cÄ±lar tablosunda olan RolID')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54000, N'Kayýt Görüntüleme Yetkiniz Bulunamadý. Lütfen Yetkinizle Görüþün.', N'Okuma Yetkisi Yok')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54000, N'KayÄ±t GÃ¶rÃ¼ntÃ¼leme Yetkiniz BulunamadÄ±. LÃ¼tfen Yetkinizle GÃ¶rÃ¼ÅŸÃ¼n.', N'Okuma Yetkisi Yok')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54001, N'Kayýt Ekleme Yetkiniz Bulunamadý. Lütfen Yetkilinizle Görüþün.', N'Yazma Yetkisi Yok')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54001, N'KayÄ±t Ekleme Yetkiniz BulunamadÄ±. LÃ¼tfen Yetkilinizle GÃ¶rÃ¼ÅŸÃ¼n.', N'Yazma Yetkisi Yok')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54002, N'Kayýt Düzenleme Yetkiniz Bulunamadý. Lütfen Yetkilinizle Görüþün.', N'Düzenleme Yetkisi Yok')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54002, N'KayÄ±t DÃ¼zenleme Yetkiniz BulunamadÄ±. LÃ¼tfen Yetkilinizle GÃ¶rÃ¼ÅŸÃ¼n.', N'DÃ¼zenleme Yetkisi Yok')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54003, N'Kayýt Silme Yetkiniz Bulunamadý. Lütfen Yetkilinizle Görüþün', N'Silme Yetkisi Yok')
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (54003, N'KayÄ±t Silme Yetkiniz BulunamadÄ±. LÃ¼tfen Yetkilinizle GÃ¶rÃ¼ÅŸÃ¼n', N'Silme Yetkisi Yok')
 GO
-INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (55001, N'Þube Bulunamadý', NULL)
+INSERT [log].[Hatalar] ([HataKodu], [HataMesaji], [HataAciklamasi]) VALUES (55001, N'Åžube BulunamadÄ±', NULL)
 GO
 SET IDENTITY_INSERT [log].[UygulamaHatalari] ON 
 GO
-INSERT [log].[UygulamaHatalari] ([HataID], [HataKodu], [HataMesaji], [MetodAdi], [KulID], [HataTarihi]) VALUES (1, -2147467261, N'Deðer null olamaz.
-Parametre adý: source', N'simpleButton_RolKaydet_Click', 1, CAST(N'2024-10-05T14:56:28.237' AS DateTime))
+INSERT [log].[UygulamaHatalari] ([HataID], [HataKodu], [HataMesaji], [MetodAdi], [KulID], [HataTarihi]) VALUES (1, -2147467261, N'DeÄŸer null olamaz.
+Parametre adÄ±: source', N'simpleButton_RolKaydet_Click', 1, CAST(N'2024-10-05T14:56:28.237' AS DateTime))
 GO
 SET IDENTITY_INSERT [log].[UygulamaHatalari] OFF
 GO
@@ -699,11 +752,11 @@ ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_Okuma]  DEFAUL
 GO
 ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_Yazma]  DEFAULT ((0)) FOR [Yazma]
 GO
-ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_Düzenleme]  DEFAULT ((0)) FOR [Duzenleme]
+ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_DÃ¼zenleme]  DEFAULT ((0)) FOR [Duzenleme]
 GO
 ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_OlusturanKulID]  DEFAULT ((-1)) FOR [OlusturanKulID]
 GO
-/****** Object:  StoredProcedure [dbo].[GirisKontrol]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[GirisKontrol]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -711,7 +764,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Giriþ Kontrol
+-- Description:	GiriÅŸ Kontrol
 -- =============================================
 CREATE PROCEDURE [dbo].[GirisKontrol]
 	@KulAdi nvarchar(255),
@@ -754,7 +807,7 @@ BEGIN
 			end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[KullaniciDELETE]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[KullaniciDELETE]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -762,7 +815,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Kullanýcý Silme veya Pasife Alma
+-- Description:	KullanÄ±cÄ± Silme veya Pasife Alma
 -- =============================================
 CREATE PROCEDURE [dbo].[KullaniciDELETE]
 	@KulID int,
@@ -802,16 +855,16 @@ BEGIN
 
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[KullaniciSAVE]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[KullaniciSAVE]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -819,7 +872,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Kullanýcý Oluþturma Güncelleme
+-- Description:	KullanÄ±cÄ± OluÅŸturma GÃ¼ncelleme
 -- =============================================
 CREATE PROCEDURE [dbo].[KullaniciSAVE]
 	@KulID int,
@@ -889,16 +942,59 @@ BEGIN
 
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[Raporla_SubeGelirDurumu]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[Raporla_Personel]    Script Date: 25.05.2025 18:02:38 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Raporla_Personel]
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- =============================================
+-- Author:		CANER ORAK
+-- Create date: 25.05.2025
+-- Description:	PERSONEL BAZINDA RAPORLAMA, MAAÅž ÃœCRETLERÄ°NDE KDV HESAPLAMA
+-- =============================================
+
+    DECLARE @SimdikiTarihSaat DATETIME = CAST(CONVERT(VARCHAR(16), GETDATE(), 120) AS DATETIME);
+
+    DECLARE @ToplamMaas MONEY = (SELECT SUM(ISNULL(Maas, 0)) FROM Kullanicilar WHERE DurumID = 1);
+    DECLARE @ToplamKDV MONEY = ROUND(@ToplamMaas * 0.20, 2);
+
+    
+    SELECT 
+        KulID,
+        KulAdi,
+        KulSifre,
+        RolID,
+        Adi,
+        Soyadi,
+        Maas,
+        ROUND(Maas * 0.20, 2) AS MaasKDV,
+        ROUND(Maas * 1, 2) AS MaasKDVDahil,
+        @ToplamMaas AS ToplamMaas,
+        @ToplamKDV AS ToplamKDV,
+        ROUND(@ToplamMaas, 2) AS ToplamKDVDahil,
+        @SimdikiTarihSaat AS SimdikiTarihSaat
+    FROM 
+        Kullanicilar
+    WHERE 
+        DurumID = 1
+END;
+GO
+/****** Object:  StoredProcedure [dbo].[Raporla_SubeGelirDurumu]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -910,7 +1006,7 @@ BEGIN
 -- =============================================
 -- Author:		CANER ORAK
 -- Create date: 25.05.2025
--- Description:	ÞUBE BAZINDA RAPORLAMA VE RAPOR ZAMANI VERÝSÝ ALMA
+-- Description:	ÅžUBE BAZINDA RAPORLAMA VE RAPOR ZAMANI VERÄ°SÄ° ALMA
 -- =============================================
 
     DECLARE @SimdikiTarihSaat DATETIME = CAST(CONVERT(VARCHAR(16), GETDATE(), 120) AS DATETIME);
@@ -943,7 +1039,7 @@ BEGIN
         SubeID <> @IlkSubeID
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[RolDELETE]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[RolDELETE]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -951,7 +1047,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Kullanýlmayan Rolü Silebilen Prosedür
+-- Description:	KullanÄ±lmayan RolÃ¼ Silebilen ProsedÃ¼r
 -- =============================================
 CREATE PROCEDURE [dbo].[RolDELETE]
 	@RolID int,
@@ -990,16 +1086,16 @@ BEGIN
 
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @KulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @KulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[RolSAVE]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[RolSAVE]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1008,7 +1104,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Rol Ekleme Ve Düzenlem
+-- Description:	Rol Ekleme Ve DÃ¼zenlem
 -- =============================================
 CREATE PROCEDURE [dbo].[RolSAVE]
 	@RolID int,
@@ -1111,16 +1207,16 @@ BEGIN
 
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @KulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @KulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SubeDELETE]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[SubeDELETE]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1128,7 +1224,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-05
--- Description:	Þube Silme
+-- Description:	Åžube Silme
 -- =============================================
 CREATE PROCEDURE [dbo].[SubeDELETE]
 	@SubeID int,
@@ -1163,16 +1259,16 @@ BEGIN
 
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SubeSAVE]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [dbo].[SubeSAVE]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1180,7 +1276,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2025-05-24
--- Description:	Þube Oluþturma Güncelleme
+-- Description:	Åžube OluÅŸturma GÃ¼ncelleme
 -- =============================================
 CREATE PROCEDURE [dbo].[SubeSAVE]
 	@SubeID int,
@@ -1237,16 +1333,16 @@ BEGIN
 
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @OlusturanKulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [log].[sysHataGonder]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [log].[sysHataGonder]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1270,12 +1366,12 @@ begin
 	
 	select @vAdSoyad = dbo.fnGetKulTamIsimByID(@KulID);
 	
-	select @vSonuc = case when @vAdSoyad = '' then @vSonuc else 'Sayýn ' + @vAdSoyad + ', ' + @vSonuc + ' [' + cast(@HataKodu as nvarchar(20)) +  '] ' end;
+	select @vSonuc = case when @vAdSoyad = '' then @vSonuc else 'SayÄ±n ' + @vAdSoyad + ', ' + @vSonuc + ' [' + cast(@HataKodu as nvarchar(20)) +  '] ' end;
 	
 	throw @HataKodu, @vSonuc, 1;
 end;
 GO
-/****** Object:  StoredProcedure [log].[sysHataKaydet]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [log].[sysHataKaydet]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1321,7 +1417,7 @@ BEGIN
 		end catch;
 END;
 GO
-/****** Object:  StoredProcedure [log].[UygulamaHataKaydet]    Script Date: 25.05.2025 16:02:00 ******/
+/****** Object:  StoredProcedure [log].[UygulamaHataKaydet]    Script Date: 25.05.2025 18:02:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1329,7 +1425,7 @@ GO
 -- =============================================
 -- Author:		Hasan Basri OY
 -- Create date: 2024-10-04
--- Description:	Uygulama RunTime Hatalarý Loglar
+-- Description:	Uygulama RunTime HatalarÄ± Loglar
 -- =============================================
 CREATE PROCEDURE [log].[UygulamaHataKaydet] 
 	@HataKodu int,
@@ -1356,12 +1452,12 @@ BEGIN
 	end try
 	begin catch
 		if @@trancount > 0 rollback tran @TransactionName;/*Transaction varsa rollback at*/		
-		/*	   Hata Loglanýyor     */
+		/*	   Hata LoglanÄ±yor     */
 		declare @vErrorNumber int, @vErrorMessage nvarchar(500), @LogID varchar(50), @vCustomMessage varchar(100);
 		SELECT @vErrorNumber = ERROR_NUMBER(), @vErrorMessage = ERROR_MESSAGE();
-		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @KulID, @LogID output;	-- Hatayý Logla...
-		select @vCustomMessage = 'Veritabaný Hatasý!' + ' [' + @LogID + ']';
-		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- Hatayý geri döndür...		
+		exec log.sysHataKaydet @vErrorNumber, @vErrorMessage, @KulID, @LogID output;	-- HatayÄ± Logla...
+		select @vCustomMessage = 'VeritabanÄ± HatasÄ±!' + ' [' + @LogID + ']';
+		if @vErrorNumber > 50000 begin; throw; end else begin; throw 50005, @vCustomMessage, 1; end; 	-- HatayÄ± geri dÃ¶ndÃ¼r...		
 	end catch;
 END
 GO

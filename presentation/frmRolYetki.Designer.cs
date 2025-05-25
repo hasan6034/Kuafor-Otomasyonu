@@ -75,25 +75,31 @@
             // tileViewColumn_RolAdi
             // 
             this.tileViewColumn_RolAdi.FieldName = "RolAdi";
+            this.tileViewColumn_RolAdi.MinWidth = 23;
             this.tileViewColumn_RolAdi.Name = "tileViewColumn_RolAdi";
             this.tileViewColumn_RolAdi.Visible = true;
             this.tileViewColumn_RolAdi.VisibleIndex = 0;
+            this.tileViewColumn_RolAdi.Width = 87;
             // 
             // tileViewColumn_KullaniciSayisi
             // 
             this.tileViewColumn_KullaniciSayisi.Caption = "Kullanıcı Sayısı";
             this.tileViewColumn_KullaniciSayisi.FieldName = "KullaniciSayisi";
+            this.tileViewColumn_KullaniciSayisi.MinWidth = 23;
             this.tileViewColumn_KullaniciSayisi.Name = "tileViewColumn_KullaniciSayisi";
             this.tileViewColumn_KullaniciSayisi.Visible = true;
             this.tileViewColumn_KullaniciSayisi.VisibleIndex = 1;
+            this.tileViewColumn_KullaniciSayisi.Width = 87;
             // 
             // gridControl_RolListesi
             // 
             this.gridControl_RolListesi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl_RolListesi.Location = new System.Drawing.Point(2, 29);
+            this.gridControl_RolListesi.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl_RolListesi.Location = new System.Drawing.Point(2, 36);
             this.gridControl_RolListesi.MainView = this.tileView_RolListesi;
+            this.gridControl_RolListesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl_RolListesi.Name = "gridControl_RolListesi";
-            this.gridControl_RolListesi.Size = new System.Drawing.Size(322, 420);
+            this.gridControl_RolListesi.Size = new System.Drawing.Size(376, 517);
             this.gridControl_RolListesi.TabIndex = 0;
             this.gridControl_RolListesi.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tileView_RolListesi});
@@ -104,6 +110,7 @@
             this.tileViewColumn_RolAdi,
             this.tileViewColumn_RolID,
             this.tileViewColumn_KullaniciSayisi});
+            this.tileView_RolListesi.DetailHeight = 431;
             this.tileView_RolListesi.GridControl = this.gridControl_RolListesi;
             this.tileView_RolListesi.Name = "tileView_RolListesi";
             this.tileView_RolListesi.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
@@ -142,12 +149,15 @@
             // tileViewColumn_RolID
             // 
             this.tileViewColumn_RolID.FieldName = "RolID";
+            this.tileViewColumn_RolID.MinWidth = 23;
             this.tileViewColumn_RolID.Name = "tileViewColumn_RolID";
+            this.tileViewColumn_RolID.Width = 87;
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainerControl1.Name = "splitContainerControl1";
             // 
             // splitContainerControl1.Panel1
@@ -163,8 +173,8 @@
             this.splitContainerControl1.Panel2.Controls.Add(this.textEdit_RolAdi);
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl_RolYetki);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(944, 451);
-            this.splitContainerControl1.SplitterPosition = 326;
+            this.splitContainerControl1.Size = new System.Drawing.Size(1101, 555);
+            this.splitContainerControl1.SplitterPosition = 380;
             this.splitContainerControl1.TabIndex = 1;
             // 
             // groupControl_RolListesi
@@ -172,25 +182,28 @@
             this.groupControl_RolListesi.Controls.Add(this.gridControl_RolListesi);
             this.groupControl_RolListesi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl_RolListesi.Location = new System.Drawing.Point(0, 0);
+            this.groupControl_RolListesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupControl_RolListesi.Name = "groupControl_RolListesi";
-            this.groupControl_RolListesi.Size = new System.Drawing.Size(326, 451);
+            this.groupControl_RolListesi.Size = new System.Drawing.Size(380, 555);
             this.groupControl_RolListesi.TabIndex = 0;
             this.groupControl_RolListesi.Text = "Rol Listesi";
             // 
             // simpleButton_RolSil
             // 
-            this.simpleButton_RolSil.Location = new System.Drawing.Point(290, 24);
+            this.simpleButton_RolSil.Location = new System.Drawing.Point(338, 30);
+            this.simpleButton_RolSil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.simpleButton_RolSil.Name = "simpleButton_RolSil";
-            this.simpleButton_RolSil.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton_RolSil.Size = new System.Drawing.Size(88, 28);
             this.simpleButton_RolSil.TabIndex = 2;
             this.simpleButton_RolSil.Text = "Sil";
             this.simpleButton_RolSil.Click += new System.EventHandler(this.SimpleButton_RolSil_Click);
             // 
             // simpleButton_RolKaydet
             // 
-            this.simpleButton_RolKaydet.Location = new System.Drawing.Point(209, 24);
+            this.simpleButton_RolKaydet.Location = new System.Drawing.Point(244, 30);
+            this.simpleButton_RolKaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.simpleButton_RolKaydet.Name = "simpleButton_RolKaydet";
-            this.simpleButton_RolKaydet.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton_RolKaydet.Size = new System.Drawing.Size(88, 28);
             this.simpleButton_RolKaydet.TabIndex = 1;
             this.simpleButton_RolKaydet.Text = "Kaydet";
             this.simpleButton_RolKaydet.Click += new System.EventHandler(this.SimpleButton_RolKaydet_Click);
@@ -198,18 +211,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 29);
+            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Rol Adı";
             // 
             // textEdit_RolAdi
             // 
             this.textEdit_RolAdi.EnterMoveNextControl = true;
-            this.textEdit_RolAdi.Location = new System.Drawing.Point(77, 21);
+            this.textEdit_RolAdi.Location = new System.Drawing.Point(90, 26);
+            this.textEdit_RolAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit_RolAdi.Name = "textEdit_RolAdi";
-            this.textEdit_RolAdi.Size = new System.Drawing.Size(126, 28);
+            this.textEdit_RolAdi.Size = new System.Drawing.Size(147, 34);
             this.textEdit_RolAdi.TabIndex = 0;
             // 
             // gridControl_RolYetki
@@ -217,12 +232,14 @@
             this.gridControl_RolYetki.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl_RolYetki.Location = new System.Drawing.Point(0, 57);
+            this.gridControl_RolYetki.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl_RolYetki.Location = new System.Drawing.Point(0, 70);
             this.gridControl_RolYetki.MainView = this.gridView_RolYetki;
+            this.gridControl_RolYetki.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl_RolYetki.Name = "gridControl_RolYetki";
             this.gridControl_RolYetki.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gridControl_RolYetki.Size = new System.Drawing.Size(602, 394);
+            this.gridControl_RolYetki.Size = new System.Drawing.Size(705, 485);
             this.gridControl_RolYetki.TabIndex = 3;
             this.gridControl_RolYetki.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_RolYetki});
@@ -239,11 +256,13 @@
             this.gridColumn_Yazma,
             this.gridColumn_Duzenleme,
             this.gridColumn_Silme});
+            this.gridView_RolYetki.DetailHeight = 431;
             this.gridView_RolYetki.GridControl = this.gridControl_RolYetki;
             this.gridView_RolYetki.GroupCount = 1;
             this.gridView_RolYetki.Name = "gridView_RolYetki";
             this.gridView_RolYetki.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
             this.gridView_RolYetki.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView_RolYetki.OptionsEditForm.PopupEditFormWidth = 933;
             this.gridView_RolYetki.OptionsSelection.MultiSelect = true;
             this.gridView_RolYetki.OptionsView.ColumnAutoWidth = false;
             this.gridView_RolYetki.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways;
@@ -256,67 +275,85 @@
             // 
             this.gridColumn_RolID.Caption = "Rol ID";
             this.gridColumn_RolID.FieldName = "RolID";
+            this.gridColumn_RolID.MinWidth = 23;
             this.gridColumn_RolID.Name = "gridColumn_RolID";
+            this.gridColumn_RolID.Width = 87;
             // 
             // gridColumn_RolAdi
             // 
             this.gridColumn_RolAdi.Caption = "RolAdi";
             this.gridColumn_RolAdi.FieldName = "RolAdi";
+            this.gridColumn_RolAdi.MinWidth = 23;
             this.gridColumn_RolAdi.Name = "gridColumn_RolAdi";
+            this.gridColumn_RolAdi.Width = 87;
             // 
             // gridColumn_SayfaID
             // 
             this.gridColumn_SayfaID.Caption = "SayfaID";
             this.gridColumn_SayfaID.FieldName = "SayfaID";
+            this.gridColumn_SayfaID.MinWidth = 23;
             this.gridColumn_SayfaID.Name = "gridColumn_SayfaID";
+            this.gridColumn_SayfaID.Width = 87;
             // 
             // gridColumn_SayfaAdi
             // 
             this.gridColumn_SayfaAdi.Caption = "Sayfa Adı";
             this.gridColumn_SayfaAdi.FieldName = "SayfaAdi";
+            this.gridColumn_SayfaAdi.MinWidth = 23;
             this.gridColumn_SayfaAdi.Name = "gridColumn_SayfaAdi";
             this.gridColumn_SayfaAdi.Visible = true;
             this.gridColumn_SayfaAdi.VisibleIndex = 0;
+            this.gridColumn_SayfaAdi.Width = 87;
             // 
             // gridColumn_ModulAdi
             // 
             this.gridColumn_ModulAdi.Caption = "Modül Adı";
             this.gridColumn_ModulAdi.FieldName = "ModulAdi";
+            this.gridColumn_ModulAdi.MinWidth = 23;
             this.gridColumn_ModulAdi.Name = "gridColumn_ModulAdi";
             this.gridColumn_ModulAdi.Visible = true;
             this.gridColumn_ModulAdi.VisibleIndex = 5;
+            this.gridColumn_ModulAdi.Width = 87;
             // 
             // gridColumn_Okuma
             // 
             this.gridColumn_Okuma.Caption = "Okuma";
             this.gridColumn_Okuma.FieldName = "Okuma";
+            this.gridColumn_Okuma.MinWidth = 23;
             this.gridColumn_Okuma.Name = "gridColumn_Okuma";
             this.gridColumn_Okuma.Visible = true;
             this.gridColumn_Okuma.VisibleIndex = 1;
+            this.gridColumn_Okuma.Width = 87;
             // 
             // gridColumn_Yazma
             // 
             this.gridColumn_Yazma.Caption = "Yazma";
             this.gridColumn_Yazma.FieldName = "Yazma";
+            this.gridColumn_Yazma.MinWidth = 23;
             this.gridColumn_Yazma.Name = "gridColumn_Yazma";
             this.gridColumn_Yazma.Visible = true;
             this.gridColumn_Yazma.VisibleIndex = 2;
+            this.gridColumn_Yazma.Width = 87;
             // 
             // gridColumn_Duzenleme
             // 
             this.gridColumn_Duzenleme.Caption = "Duzenleme";
             this.gridColumn_Duzenleme.FieldName = "Duzenleme";
+            this.gridColumn_Duzenleme.MinWidth = 23;
             this.gridColumn_Duzenleme.Name = "gridColumn_Duzenleme";
             this.gridColumn_Duzenleme.Visible = true;
             this.gridColumn_Duzenleme.VisibleIndex = 3;
+            this.gridColumn_Duzenleme.Width = 87;
             // 
             // gridColumn_Silme
             // 
             this.gridColumn_Silme.Caption = "Silme";
             this.gridColumn_Silme.FieldName = "Silme";
+            this.gridColumn_Silme.MinWidth = 23;
             this.gridColumn_Silme.Name = "gridColumn_Silme";
             this.gridColumn_Silme.Visible = true;
             this.gridColumn_Silme.VisibleIndex = 4;
+            this.gridColumn_Silme.Width = 87;
             // 
             // repositoryItemCheckEdit1
             // 
@@ -325,10 +362,12 @@
             // 
             // FrmRolYetki
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 451);
+            this.ClientSize = new System.Drawing.Size(1101, 555);
             this.Controls.Add(this.splitContainerControl1);
+            this.IconOptions.Image = global::Kuafor_Otomasyonu.Properties.Resources.Kuafor;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmRolYetki";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rol Yetki";

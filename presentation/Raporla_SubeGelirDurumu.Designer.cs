@@ -562,7 +562,7 @@
             // subtotal
             // 
             this.subtotal.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ToplamUcret]-[KDV]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ToplamUcret]-[ToplamKDV]")});
             this.subtotal.Font = new DevExpress.Drawing.DXFont("Segoe UI", 16F);
             this.subtotal.Name = "subtotal";
             this.subtotal.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 0, 0, 0, 100F);
@@ -578,13 +578,12 @@
             // tax
             // 
             this.tax.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[KDV]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ToplamKDV]")});
             this.tax.Font = new DevExpress.Drawing.DXFont("Segoe UI", 16F);
             this.tax.Name = "tax";
             this.tax.StylePriority.UseBackColor = false;
             this.tax.StylePriority.UseFont = false;
             this.tax.StylePriority.UseTextAlignment = false;
-            this.tax.Text = "$0";
             this.tax.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.tax.TextFormatString = "{0:$0.00}";
             this.tax.Weight = 0.4939118390364145D;

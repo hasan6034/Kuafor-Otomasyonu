@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [Kuafor]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Database [Kuafor]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE DATABASE [Kuafor]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -84,25 +84,25 @@ ALTER DATABASE [Kuafor] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_PO
 GO
 USE [Kuafor]
 GO
-/****** Object:  Schema [log]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Schema [log]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE SCHEMA [log]
 GO
-/****** Object:  UserDefinedDataType [dbo].[barkod_str]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedDataType [dbo].[barkod_str]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE TYPE [dbo].[barkod_str] FROM [nvarchar](50) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[belgeno_str]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedDataType [dbo].[belgeno_str]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE TYPE [dbo].[belgeno_str] FROM [nvarchar](50) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[cihazseri_str]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedDataType [dbo].[cihazseri_str]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE TYPE [dbo].[cihazseri_str] FROM [nvarchar](50) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[evrakseri_str]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedDataType [dbo].[evrakseri_str]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE TYPE [dbo].[evrakseri_str] FROM [nvarchar](20) NULL
 GO
-/****** Object:  UserDefinedDataType [dbo].[nvarchar_maxhesapisimno]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedDataType [dbo].[nvarchar_maxhesapisimno]    Script Date: 25.05.2025 18:27:50 ******/
 CREATE TYPE [dbo].[nvarchar_maxhesapisimno] FROM [nvarchar](90) NULL
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnCountRoldekiUser]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnCountRoldekiUser]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -128,7 +128,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetKulTamIsimByID]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetKulTamIsimByID]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -139,7 +139,7 @@ BEGIN
 	RETURN isnull((select u.Adi + ' ' + u.Soyadi from dbo.Kullanicilar u where u.KulID = @KulID), '');
 END;
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetModulAdiBySayfaID]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetModulAdiBySayfaID]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -161,7 +161,7 @@ declare @ModulID int = (select ModulID from dbo.stSayfalar where SayfaID = @Sayf
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetRolAdiByID]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetRolAdiByID]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -182,7 +182,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetSayfaAdiByID]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetSayfaAdiByID]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -203,7 +203,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnGetYetkiKontrol]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnGetYetkiKontrol]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -249,7 +249,7 @@ BEGIN
 
 END
 GO
-/****** Object:  UserDefinedFunction [dbo].[fnValueParser]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[fnValueParser]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -266,7 +266,7 @@ BEGIN
 	RETURN @vSonuc;
 END;
 GO
-/****** Object:  Table [dbo].[Kullanicilar]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [dbo].[Kullanicilar]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -286,7 +286,7 @@ CREATE TABLE [dbo].[Kullanicilar](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfKullanicilar]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfKullanicilar]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -320,7 +320,7 @@ RETURN
 		k.KulID = case when @KulID = -1 then k.KulID else @KulID end
 )
 GO
-/****** Object:  Table [dbo].[Roller]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [dbo].[Roller]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -338,7 +338,7 @@ CREATE TABLE [dbo].[Roller](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfRoller]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfRoller]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -371,7 +371,7 @@ RETURN
 		r.RolID = case when @RolID = -1 then r.RolID else @RolID end
 )
 GO
-/****** Object:  Table [dbo].[RolYetkileri]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [dbo].[RolYetkileri]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -392,7 +392,7 @@ CREATE TABLE [dbo].[RolYetkileri](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[stSayfalar]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [dbo].[stSayfalar]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -407,7 +407,7 @@ CREATE TABLE [dbo].[stSayfalar](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfRolYetkileriByRolID]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfRolYetkileriByRolID]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -445,7 +445,7 @@ RETURN
 		s.SayfaID
 )
 GO
-/****** Object:  Table [dbo].[stModuller]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [dbo].[stModuller]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -459,7 +459,7 @@ CREATE TABLE [dbo].[stModuller](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfMenuGetir]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfMenuGetir]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -488,7 +488,7 @@ RETURN
 
 )
 GO
-/****** Object:  Table [dbo].[Subeler]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [dbo].[Subeler]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -506,7 +506,7 @@ CREATE TABLE [dbo].[Subeler](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  UserDefinedFunction [dbo].[tfSubeler]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  UserDefinedFunction [dbo].[tfSubeler]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -536,7 +536,7 @@ RETURN
 		s.Durum = 1
 )
 GO
-/****** Object:  Table [log].[Hatalar]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [log].[Hatalar]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -551,7 +551,7 @@ CREATE TABLE [log].[Hatalar](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [log].[UygulamaHatalari]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  Table [log].[UygulamaHatalari]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -756,7 +756,7 @@ ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_Düzenleme]  D
 GO
 ALTER TABLE [dbo].[RolYetkileri] ADD  CONSTRAINT [DF_RolYetkileri_OlusturanKulID]  DEFAULT ((-1)) FOR [OlusturanKulID]
 GO
-/****** Object:  StoredProcedure [dbo].[GirisKontrol]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[GirisKontrol]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -807,7 +807,7 @@ BEGIN
 			end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[KullaniciDELETE]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[KullaniciDELETE]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -864,7 +864,7 @@ BEGIN
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[KullaniciSAVE]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[KullaniciSAVE]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -951,7 +951,7 @@ BEGIN
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[Raporla_Personel]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[Raporla_Personel]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -994,7 +994,7 @@ BEGIN
         DurumID = 1
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[Raporla_SubeGelirDurumu]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[Raporla_SubeGelirDurumu]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1039,7 +1039,7 @@ BEGIN
         SubeID <> @IlkSubeID
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[RolDELETE]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[RolDELETE]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1095,7 +1095,7 @@ BEGIN
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[RolSAVE]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[RolSAVE]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1216,7 +1216,7 @@ BEGIN
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SubeDELETE]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[SubeDELETE]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1268,7 +1268,7 @@ BEGIN
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SubeSAVE]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [dbo].[SubeSAVE]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1342,7 +1342,7 @@ BEGIN
 	end catch;
 END
 GO
-/****** Object:  StoredProcedure [log].[sysHataGonder]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [log].[sysHataGonder]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1371,7 +1371,7 @@ begin
 	throw @HataKodu, @vSonuc, 1;
 end;
 GO
-/****** Object:  StoredProcedure [log].[sysHataKaydet]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [log].[sysHataKaydet]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1417,7 +1417,7 @@ BEGIN
 		end catch;
 END;
 GO
-/****** Object:  StoredProcedure [log].[UygulamaHataKaydet]    Script Date: 25.05.2025 18:02:38 ******/
+/****** Object:  StoredProcedure [log].[UygulamaHataKaydet]    Script Date: 25.05.2025 18:27:50 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

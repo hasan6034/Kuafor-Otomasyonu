@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\HizmetlerDTO.cs" />
     <Compile Include="DTOs\KullanicilarDTO.cs" />
     <Compile Include="DTOs\MenuGetirDTO.cs" />
     <Compile Include="DTOs\RollerDTO.cs" />
@@ -51,8 +52,10 @@
     <Compile Include="Enums\Sayfalar.cs" />
     <Compile Include="IRepositories\IGenelRepository.cs" />
     <Compile Include="IRepositories\IKullaniciRepository.cs" />
+    <Compile Include="IRepositories\IHizmetRepository.cs" />
     <Compile Include="IRepositories\ISubeRepository.cs" />
     <Compile Include="IServices\IGenelService.cs" />
+    <Compile Include="IServices\IHizmetService.cs" />
     <Compile Include="IServices\IKullaniciService.cs" />
     <Compile Include="IServices\ISubeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
